@@ -12,3 +12,4 @@ function update() {
 }
 
 update $(pwd)/hammerspoon ~/.hammerspoon
+update $(pwd)/SpaceVim.d ~/.SpaceVim.d
