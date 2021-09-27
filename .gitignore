@@ -1,5 +1,5 @@
-backup/*
 clash/*.mmdb
 clash/.cache
+iterm2
 karabiner/assets/*
 karabiner/automatic_backups/*
