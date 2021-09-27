@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "GitHub Dark Default",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.accessibilitySupport": "off",
+    "terminal.external.osxExec": "iTerm2.app",
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "editor.lineNumbers": "relative"
+}
