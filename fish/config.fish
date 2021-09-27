@@ -17,7 +17,7 @@ if status is-interactive
 end
 
 function replace_home_directory_in_fish_variables
-    sed -i '' "s|$HOME|~|g" ~/.config/fish/fish_variables
+    sed -i '' "s|$HOME|\x7e|g" ~/.config/fish/fish_variables
 end
 
 function __commandline_stash -d 'Stash current command line'
