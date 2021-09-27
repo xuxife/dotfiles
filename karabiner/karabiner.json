@@ -97,6 +97,38 @@
                                     }
                                 ],
                                 "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_down"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_up"
+                                    }
+                                ],
+                                "type": "basic"
                             }
                         ]
                     }
