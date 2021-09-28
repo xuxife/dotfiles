@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>itemIdentifierVersion</key>
+	<integer>4294967303</integer>
+	<key>shortcuts</key>
+	<dict>
+		<key>ODLBCalendarItem:0A1CE082-D1EE-4277-9F7C-20AF1C8A54C4</key>
+		<string>ca</string>
+		<key>ODLBPathItem:/Applications/115Browser.app</key>
+		<string>b1</string>
+		<key>ODLBPathItem:/Applications/人人影视PRO.app</key>
+		<string>rr</string>
+		<key>ODLBPathItem:/Applications/弹弹play.app</key>
+		<string>dd</string>
+		<key>ODLBPathItem:~/Google Drive</key>
+		<string>1</string>
+		<key>ODLBPathItem:~/Google Drive/2019-20/CSC3002</key>
+		<string>pp</string>
+		<key>ODLBPathItem:~/Google Drive/Textbook/Computer Science/Parallel Programming (Wilkinson).pdf</key>
+		<string>pct</string>
+		<key>ODLBPathItem:~/Google Drive/Textbook/Computer Science/progit_v2.1.9.pdf</key>
+		<string>gitt</string>
+		<key>ODLBPathItem:~/Google Drive/Textbook/Machine Learning/MIT-Deep Learning.pdf</key>
+		<string>dlt</string>
+		<key>ODLBPathItem:~/Google Drive/Textbook/Probability and Statistic/Introduction to Linear Regression Analysis.pdf</key>
+		<string>rat</string>
+		<key>ODLBPathItem:~/Google Drive/Textbook/Probability and Statistic/Time Series Analysis.pdf</key>
+		<string>tst</string>
+		<key>ODLBPathItem:~/Google 云端硬盘</key>
+		<string>1</string>
+		<key>ODLBPathItem:~/Google 云端硬盘/Textbook/Probability and Statistic/Probability and Statistical Inference 9th Edition.pdf</key>
+		<string>stb</string>
+		<key>ODLBPathItem:~/Google 云端硬盘/Textbook/Statistical Learning/ISLR First Printing.pdf</key>
+		<string>dat</string>
+		<key>ODLBPathItem:~/Google 云端硬盘/Textbook/与自然对话_中译版.pdf</key>
+		<string>nab</string>
+		<key>ODLBSearchTemplateItem:http://s.weibo.com/weibo/*</key>
+		<string>wb</string>
+		<key>ODLBSearchTemplateItem:http://search.bilibili.com/all?keyword=*</key>
+		<string>bls</string>
+		<key>ODLBSearchTemplateItem:https://book.douban.com/subject_search?search_text=*</key>
+		<string>dbb</string>
+		<key>ODLBSearchTemplateItem:https://movie.douban.com/subject_search?search_text=*</key>
+		<string>dbm</string>
+		<key>ODLBSearchTemplateItem:https://s.taobao.com/search?q=*</key>
+		<string>tb</string>
+		<key>ODLBSearchTemplateItem:https://sspai.com/search/?q=*</key>
+		<string>ssp</string>
+		<key>ODLBSearchTemplateItem:https://www.amazon.cn/s/ref=nb_sb_noss?__mk_zh_CN=亚马逊网站&amp;url=search-alias%3Daps&amp;field-keywords=*</key>
+		<string>ama</string>
+		<key>ODLBSearchTemplateItem:https://www.zhihu.com/search?type=content&amp;q=*</key>
+		<string>zh</string>
+		<key>ODLBURLItem:http://10.20.243.234/</key>
+		<string>cp</string>
+		<key>ODLBURLItem:http://cloudprint.cuhk.edu.cn/</key>
+		<string>cp</string>
+		<key>ODLBURLItem:http://sspai.com/</key>
+		<string>ssp</string>
+		<key>ODLBURLItem:https://photos.google.com/</key>
+		<string>gp</string>
+	</dict>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

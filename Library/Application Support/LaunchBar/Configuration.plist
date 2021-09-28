@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aliasNames</key>
+	<dict>
+		<key>ODLBPathItem:/</key>
+		<string>Root /</string>
+		<key>ODLBPathItem:/Volumes</key>
+		<string>Mounted Volumes</string>
+		<key>ODLBPathItem:/usr/bin</key>
+		<string>usr/bin</string>
+		<key>ODLBPathItem:/usr/local</key>
+		<string>usr/local</string>
+		<key>ODLBPathItem:/usr/local/bin</key>
+		<string>usr/local/bin</string>
+		<key>ODLBPathItem:/usr/sbin</key>
+		<string>usr/sbin</string>
+	</dict>
+	<key>disabledItems</key>
+	<array>
+		<string>ODLBSearchTemplateItem:2BACB491-CB5F-4A04-88B5-AE180FFE62DF</string>
+		<string>ODLBSearchTemplateItem:http://www.ask.com/web?q=*</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E5%A4%A7%E5%A1%9A%E3%81%BE%E3%81%B2%E3%82%8D</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.PasteInFrontmostApplication</string>
+		<string>ODLBCategory:TeX</string>
+		<string>ODLBContactGroup:4C5052B2-C5DB-4938-87AD-7CF44B99A769:ABGroup</string>
+		<string>ODLBCategory:Microsoft Word Document (.Docx)</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W3/3.公文課件.pdf</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.iTunesNextSong</string>
+		<string>ODLBCalendarItem:748689D7-12A1-4960-AFB8-18B1EB805C57</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E7%99%BD%E5%A7%AC%E6%B1%89%E5%8C%96%E7%BB%84</string>
+		<string>ODLBContactItem:com.apple.AddressBook:BC20711A-D329-47D2-8038-9C8A06B54C3B:ABPerson</string>
+		<string>ODLBContactItem:com.apple.AddressBook:C05986D8-D906-42FA-AE3E-12FD8E5AC166:ABPerson</string>
+		<string>ODLBSearchTemplateItem:http://www.macosxhints.com/search.php?query=*&amp;type=stories&amp;mode=search&amp;keyType=all</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/中文/棋王资料/_棋王_是文化寻根作品_之质疑_从_棋王_叙述艺术说起_傅修海.pdf</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.MediumVolume</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E5%B0%91%E5%A5%B3%E5%89%8D%E7%B7%9A</string>
+		<string>ODLBCategory:Web Bookmark</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W7/导修材料/《浮出历史地表—现代妇女文学研究》-第五章.pdf</string>
+		<string>ODLBSearchTemplateItem:02534F88-0AEA-4ECA-8D04-7C6D7D701F4F</string>
+		<string>ODLBSearchTemplateItem:B0F37E0F-7857-4346-8D65-7FDA78A2CE69</string>
+		<string>ODLBCategory:Playlist</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/中文/棋王资料/_棋王_与道家美学_苏丁.pdf</string>
+		<string>ODLBCategory:Calendar (read-only)</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/Statistic/__pycache__</string>
+		<string>ODLBPlaylist:FC70BB80BC37E983</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=Rico</string>
+		<string>ODLBCategory:Video File</string>
+		<string>ODLBCalendarItem:E06A0482-1129-4451-83E7-BF3B9E22F686</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E6%B2%A1%E6%9C%89%E6%B1%89%E5%8C%96</string>
+		<string>ODLBSearchTemplateItem:EC301A2F-AD0D-4409-B942-85C4651E1466</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.EvernoteNewNoteWithText</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/CSC1001/Assignment/116010252.zip</string>
+		<string>ODLBCalendarItem:DE158A70-E40F-4CCD-8566-9ED958063363</string>
+		<string>ODLBCategory:BibTeX</string>
+		<string>ODLBContactItem:com.apple.AddressBook:7708A2C6-8186-41CC-9A14-2EACF5A28FB5:ABPerson</string>
+		<string>ODLBSearchTemplateItem:96C00D63-66CD-4AB0-AD9C-48F35767F03F</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.iTunesBackTrack</string>
+		<string>ODLBCalendarItem:8B7A0485-DAF3-418F-9322-6031278873D2</string>
+		<string>ODLBThemeItem:at.obdev.LaunchBar.theme.BaseDark</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W11/导修材料 (1)</string>
+		<string>ODLBCategory:Aux</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/IT/116010252的副本.xlsx</string>
+		<string>ODLBCategory:Screen Name</string>
+		<string>ODLBContactItem:com.apple.AddressBook:876AB163-DFD6-47C5-AE7F-9AC61C4EE1F4:ABPerson</string>
+		<string>ODLBCategory:Microsoft Word 97 - 2004 Document (.Doc)</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E7%A9%BA%E6%B0%97%E7%B3%BB%E2%98%86%E6%BC%A2%E5%8C%96</string>
+		<string>ODLBCategory:Company Contact</string>
+		<string>ODLBCalendarItem:A22784EB-7638-425C-ADE1-12F5A8F58BAE</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W8/导修材料</string>
+		<string>ODLBCalendarItem:944851D7-1BD9-4CB4-9824-BD1BF3FC37D8</string>
+		<string>ODLBContactGroup:D2FDB30A-7F1A-41DE-A276-524F15177A1A:ABGroup</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/CSC1002/tutorial/__pycache__</string>
+		<string>ODLBCategory:Sty</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.GetMail</string>
+		<string>ODLBSearchTemplateItem:3A2CFA99-E625-4728-B408-15007DE12A1A</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W7/导修材料/_绣枕_被糟蹋的绣枕与凌叔华的低吟.pdf</string>
+		<string>ODLBPlaylist:18D115B7E02AE064</string>
+		<string>ODLBServiceItem:fr.chachatelier.pierre.LaTeXiT - LaTeXiT/Detect and typeset equations</string>
+		<string>ODLBTrackItem:58F21365B5B62EBF</string>
+		<string>ODLBCategory:Microsoft Windows Application</string>
+		<string>ODLBContactItem:com.apple.AddressBook:E6A5EB7F-31B7-4303-8AFE-ECDC8A6A1F44:ABPerson</string>
+		<string>ODLBSearchTemplateItem:EAA54B2E-8B53-4746-8B34-377F902C50FE</string>
+		<string>ODLBCategory:Company</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.CopyScreenshotOfSelectedWindow</string>
+		<string>ODLBSearchTemplateItem:itms://phobos.apple.com/WebObjects/MZSearch.woa/wa/advancedSearchResults?artistTerm=*</string>
+		<string>ODLBSearchTemplateItem:64A86411-FCF0-40E9-BC34-5E7FA2202381</string>
+		<string>ODLBURLItem:https://nhentai.net/parody/fate-kaleid-liner-prisma-illya/?page=2</string>
+		<string>ODLBCategory:GIF Image</string>
+		<string>ODLBContactGroup:FC87B3E7-2CFF-456E-B27B-B91B62D33FB4:ABGroup</string>
+		<string>ODLBCopyAction</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/期末主观讨论题最终版本.pdf</string>
+		<string>ODLBSearchTemplateItem:EC14BC18-6AF3-4651-916E-D01EDB6CAF65</string>
+		<string>ODLBCalendarItem:414546F5-5F38-496C-BF85-C5C1F17BD491</string>
+		<string>ODLBContactItem:com.apple.AddressBook:B84302D8-9953-424C-A3FD-C1B49E15D666:ABPerson</string>
+		<string>ODLBCategory:Xcode Playground</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E6%97%A0%E6%AF%92%E6%B1%89%E5%8C%96%E7%BB%84</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/2016-2017 term 1_Physical fitness theory study materials (Chinese versions ).pdf</string>
+		<string>ODLBSearchTemplateItem:EC430309-6B3C-496D-8978-7A2C8CAC3B66</string>
+		<string>ODLBSearchTemplateItem:FD6EBE1C-5639-4F3D-80D4-30A1DC9A8CB8</string>
+		<string>ODLBSearchTemplateItem:3210098C-9980-4ABF-8388-77A3F4CEA6DB</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E7%91%9E%E6%A0%91%E6%B1%89%E5%8C%96%E7%BB%84</string>
+		<string>ODLBUserAccountItem:-1</string>
+		<string>ODLBContactItem:com.apple.AddressBook:D3BCD39C-2381-4DF2-ABF0-5E0490366666:ABPerson</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E6%9C%89%E6%AF%92%E6%B0%97%E6%BC%A2%E5%8C%96%E7%B5%84</string>
+		<string>ODLBCalendarItem:0A1CE082-D1EE-4277-9F7C-20AF1C8A54C4</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E8%90%9D%E8%8E%89%E6%8F%B4%E5%8A%A9%E6%B1%89%E5%8C%96%E7%BB%84</string>
+		<string>ODLBPathItem:~/Library/Application Support/LaunchBar/Snippets/Lorem Ipsum.txt</string>
+		<string>ODLBContactItem:com.apple.AddressBook:948DE113-B68B-439A-BAC2-5C98624ABD85:ABPerson</string>
+		<string>ODLBSearchTemplateItem:75663EB6-1DEA-41B2-897B-EF29B5D3498E</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.CallWithPhone</string>
+		<string>ODLBCategory:Birthday</string>
+		<string>ODLBCategory:ImageCapture Service</string>
+		<string>ODLBCalendarItem:DA8A1B17-6720-4F7D-AB61-289481F91701</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/中文/期末主观讨论题最终版.pdf</string>
+		<string>ODLBPreviousRecipientItem:info@lagooncarrental.is</string>
+		<string>ODLBURLItem:https://nhentai.net/artist/takunomi/</string>
+		<string>ODLBSearchTemplateItem:BA176BBA-CBBC-451C-8E87-B99AAE659D1A</string>
+		<string>ODLBCategory:Swift Source</string>
+		<string>ODLBSharingServiceAction:com.apple.share.Video.upload-Facebook</string>
+		<string>ODLBCalendarItem:4240D046-9153-4ACB-B47D-6E4A8EEDB9D4</string>
+		<string>ODLBServiceItem:edu.ucsd.cs.mmccrack.bibdesk - BibDesk/Complete Rich Text Bibliography</string>
+		<string>ODLBServiceItem:fr.chachatelier.pierre.LaTeXiT - LaTeXiT/Detect and typeset equations and put result into clipboard</string>
+		<string>ODLBCompanyGroup:com.apple.AddressBook:Jaugar Home Fashion Inc.</string>
+		<string>ODLBCategory:Microsoft Excel Workbook (.Xlsx)</string>
+		<string>ODLBSearchWikimediaAction:zh.wikiquote</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=ikuhana+niiro</string>
+		<string>ODLBCurrentSafariPageAction</string>
+		<string>ODLBContactItem:com.apple.AddressBook:6E347810-FAAA-4D0A-B8C9-1FCB189D4A40:ABPerson</string>
+		<string>ODLBContactItem:com.apple.AddressBook:747B3DB7-0696-4FF4-B6E8-5CC4FBDE8DC5:ABPerson</string>
+		<string>ODLBScriptAction:xuxife.LaunchBar.action.love2io</string>
+		<string>ODLBCategory:Xcode Project</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E3%81%9F%E3%82%89%E3%81%9E%E3%81%8A</string>
+		<string>ODLBServiceItem:com.apple.dt.Instruments - System Trace</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W4/4.議論文課件.pdf</string>
+		<string>ODLBCategory:Folder</string>
+		<string>ODLBCategory:Unknown</string>
+		<string>ODLBCalendarItem:38B756C6-CAB0-40C7-BF39-C83D3B5E1907</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.RunTerminalCommand</string>
+		<string>ODLBThemeItem:at.obdev.LaunchBar.theme.Frosty</string>
+		<string>ODLBPlaylist:2B70B350B820AB97</string>
+		<string>ODLBServiceItem:fr.chachatelier.pierre.LaTeXiT - LaTeXiT/Typeset LaTeX Text</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E9%9D%B4%E4%B8%8B%E6%B1%89%E5%8C%96%E7%BB%84</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E6%AD%A6%E8%97%A4%E3%81%BE%E3%81%A8</string>
+		<string>ODLBSearchTemplateItem:http://www.oanda.com/currency/classic-converter?exch=EUR&amp;expr=USD&amp;value=*</string>
+		<string>ODLBCategory:URL</string>
+		<string>ODLBScriptAction:com.xuxife.LaunchBar.action.bb</string>
+		<string>ODLBCategory:Text File</string>
+		<string>ODLBCalendarItem:85C342E5-621A-4B81-A728-2B095CB95E30</string>
+		<string>ODLBCategory:Property List</string>
+		<string>ODLBCategory:Pages Document</string>
+		<string>ODLBURLItem:https://nhentai.net/parody/ryuuou-no-oshigoto/</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=Squeeze+Candy+Heaven</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E8%84%B8%E8%82%BF%E6%B1%89%E5%8C%96%E7%BB%84</string>
+		<string>ODLBThemeItem:at.obdev.LaunchBar.theme.Sunny</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W7/导修材料</string>
+		<string>ODLBSearchTemplateItem:2D3F3405-E2C2-4353-BC40-46A4A97D6D4B</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W1/1演讲课件.pdf</string>
+		<string>ODLBContactItem:com.apple.AddressBook:51356AA6-0F13-4D65-A3EB-4B581777194D:ABPerson</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.OpenSafariTopSites</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/中文/期末論文資料/期末論文範本.pdf</string>
+		<string>ODLBServiceItem:com.ThomsonResearchSoft.EndNote.ENService - EndNote/Insert Citation</string>
+		<string>ODLBPreviousRecipientItem:bookings@route1.is</string>
+		<string>ODLBSharingServiceAction:com.apple.share.System.add-to-safari-reading-list</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.iTunesPlay</string>
+		<string>ODLBSharingServiceAction:com.apple.share.Facebook.post</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=kizuki+rei</string>
+		<string>ODLBServiceItem:fr.chachatelier.pierre.LaTeXiT - LaTeXiT/Typeset LaTeX Maths align</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E7%AF%86%E5%84%80%E9%80%9A%E6%96%87%E6%9B%B8%E5%9D%8A%E6%BC%A2%E5%8C%96</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.GetMailInBackground</string>
+		<string>ODLBPlaylist:21F3B44B53D12751</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.DecreaseVolume</string>
+		<string>ODLBSearchTemplateItem:FED01FF7-CDD4-4CFF-8F5C-6F46E403B58F</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E4%B8%89%E4%B8%8A%E3%83%9F%E3%82%AB</string>
+		<string>ODLBCalendarItem:56074C73-8116-4165-8E8B-A12C252BC615</string>
+		<string>ODLBPathItem:~/Downloads/__pycache__</string>
+		<string>ODLBCategory:RAR Arşivi</string>
+		<string>ODLBSearchTemplateItem:https://www.computerhope.com/unix/*.htm</string>
+		<string>ODLBServiceItem:fr.chachatelier.pierre.LaTeXiT - LaTeXiT/Un-latexize the equations</string>
+		<string>ODLBCalendarItem:D93EC53A-650A-4374-AB0F-EB9F5A97ADB6</string>
+		<string>ODLBCategory:Zip Archive</string>
+		<string>ODLBCategory:R Data File</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E3%82%A2%E3%83%88%E3%83%AA%E3%82%A8%E4%B8%B8%E5%92%8C</string>
+		<string>ODLBPlaylist:456689DDD18D6D02</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W11/导修</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/IT/116010252.mp4</string>
+		<string>ODLBCalendarItem:80363A84-6AB6-4E0B-9BAC-DA10DC381FF7</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W9/导修/第九组导修-欲望都市.pptx</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W13/导修</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=Lolipoi%E6%B1%89%E5%8C%96%E7%BB%84</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=benimura+karu</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/CSC1001/Assignment/2/__pycache__</string>
+		<string>ODLBCalendarItem:AA812D9D-7BE0-49A1-8421-0FF37C2A3BF6</string>
+		<string>ODLBCalendarItem:C4385554-80F4-4BA8-A2A8-26C5AF5CB142</string>
+		<string>ODLBPathItem:~/Downloads/應用安裝包/AE脚本电影片尾滚动标题字幕效果+使用教程Aescripts Credits Are Due v1.0 monter/17G多AE模板精选影视片头音乐合集Audio Jungle超级音效库.url</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E5%9F%BA%E5%BE%B7</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.MinimumVolume</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester</string>
+		<string>ODLBCategory:Certificate</string>
+		<string>ODLBContactItem:com.apple.AddressBook:007C039D-574E-4F35-AA71-49F853380703:ABPerson</string>
+		<string>ODLBCategory:Markdown</string>
+		<string>ODLBCategory:Electronic Publication (EPUB)</string>
+		<string>ODLBSearchTemplateItem:http://www.oanda.com/currency/classic-converter?exch=USD&amp;expr=EUR&amp;value=*</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=ryo</string>
+		<string>ODLBCategory:JSON</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.EvernoteCopyLinkOfSelectedNote</string>
+		<string>ODLBNewTextDocumentHereAction</string>
+		<string>ODLBBookmarkGroup:389</string>
+		<string>ODLBServiceItem:edu.ucsd.cs.mmccrack.bibdesk - BibDesk/Show Reference With Cite Key</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W6/导修/第六周PPT.pptx</string>
+		<string>ODLBContactItem:com.apple.AddressBook:BBF320AD-75BD-4C1B-9D42-20B04B279A0E:ABPerson</string>
+		<string>ODLBSearchTemplateItem:182D6B94-BDA7-45F4-9BD0-46589D00F766</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.CopySenderOfSelectedMailMessage</string>
+		<string>ODLBSearchTemplateItem:itms://phobos.apple.com/WebObjects/MZSearch.woa/wa/advancedSearchResults?songTerm=*</string>
+		<string>ODLBSearchTemplateItem:10B87340-06D6-4EEF-9BB2-10169915927F</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=4K</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=takayaki</string>
+		<string>ODLBCopyAndPasteAction</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=rico</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W13/导修材料</string>
+		<string>ODLBURLItem:https://nhentai.net/artist/kuromotokun/</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/中文/期末論文資料/期末主观讨论题.pdf</string>
+		<string>ODLBSearchTemplateItem:C446B332-9D31-443F-80DC-88DDCCCBFBFA</string>
+		<string>ODLBSearchTemplateItem:6658F0C5-DD3A-4A0E-8EDD-EAB391AA05D8</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.iTunesFastForward</string>
+		<string>ODLBCategory:HTML5 Video (WebM)</string>
+		<string>ODLBPreviousRecipientItem:info@reykjavikcars.com</string>
+		<string>ODLBCategory:TeX File</string>
+		<string>ODLBSearchTemplateItem:itms://phobos.apple.com/WebObjects/MZSearch.woa/wa/search?term=*</string>
+		<string>ODLBSearchTemplateItem:EF3656D2-4C4F-454C-848C-444B59A5BB5E</string>
+		<string>ODLBStopSpeakingAction</string>
+		<string>ODLBSearchTemplateItem:79425581-D288-460A-A5A8-14BC9FE66B23</string>
+		<string>ODLBContactItem:com.apple.AddressBook:182CDDAB-C8A5-4360-B826-E3A839A9B182:ABPerson</string>
+		<string>ODLBCategory:Shell Script</string>
+		<string>ODLBCategory:C Header Source</string>
+		<string>ODLBSearchTemplateItem:055622E8-6676-42F0-A696-7B567503EF1B</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/IT/116010252.xlsx</string>
+		<string>ODLBPathItem:~/Downloads/應用安裝包/Crack/amtlib.framework/Versions/A/_CodeSignature</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.MaximumVolume</string>
+		<string>ODLBCategory:C++ Source</string>
+		<string>ODLBSearchDictCCAction</string>
+		<string>ODLBSearchTemplateItem:44C39A2F-7B47-4769-B52D-7C5843FCBAB9</string>
+		<string>ODLBArtist:许凤明的 iPhone</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E8%83%B8%E5%9E%AB%E6%B1%89%E5%8C%96%E7%BB%84</string>
+		<string>ODLBContactItem:com.apple.AddressBook:A031333D-E6BC-4577-97FB-8240C923E413:ABPerson</string>
+		<string>ODLBPlaylist:099289500B1C23B0</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W4/导修</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E9%BB%91%E9%94%85%E6%B1%89%E5%8C%96%E7%BB%84</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W6/导修</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/中文/期末論文資料/期末论文要求.pdf</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W7/导修</string>
+		<string>ODLBCalendarItem:B1C6A81F-4A57-4E43-9FB7-0CE1C49C08D9</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W8/导修</string>
+		<string>ODLBTrackItem:54797D036011E674</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W9/导修</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E5%97%B6%E5%92%94%E5%97%B6%E5%92%94</string>
+		<string>ODLBCategory:LaTeXiT Service</string>
+		<string>ODLBCategory:C Source</string>
+		<string>ODLBCalendarItem:E89BEE6E-0A68-4BF9-A9DF-57C5F6A1C888</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E3%81%BC%E3%82%93%E3%81%AA%E3%82%8A</string>
+		<string>ODLBPreviousRecipientItem:info@stractacars.is</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/期末论文相关材料/期末论文要求.pdf</string>
+		<string>ODLBCategory:Image File</string>
+		<string>ODLBCalendarItem:5B4BBF9A-D3F9-4704-BE48-B7FF6471F313</string>
+		<string>ODLBCalendarItem:920D49BE-DCCD-4C9B-9072-074F26DAB5CC</string>
+		<string>ODLBContactGroup:68005D07-CFF5-4980-AD77-21221982027C:ABGroup</string>
+		<string>ODLBPlaylist:1738F1557A01AFB8</string>
+		<string>ODLBSearchTemplateItem:3D3A68FB-A8A9-4995-95F6-BF297BB4DB31</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E9%88%B4%E6%9C%A8%E7%8B%82%E5%A4%AA%E9%83%8E</string>
+		<string>ODLBServiceItem:edu.ucsd.cs.mmccrack.bibdesk - BibDesk/Open URL in BibDesk Web Group</string>
+		<string>ODLBContactItem:com.apple.AddressBook:59B3C908-F127-4B78-A07B-D1E24AE1A4EC:ABPerson</string>
+		<string>ODLBCategory:Mach-O Dynamic Library</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E6%B2%92%E6%9C%89%E6%BC%A2%E5%8C%96</string>
+		<string>ODLBCategory:Lifestyle Application</string>
+		<string>ODLBCategory:QuickTime Movie</string>
+		<string>ODLBServiceItem:fr.chachatelier.pierre.LaTeXiT - LaTeXiT/Typeset LaTeX Maths inline and put result into clipboard</string>
+		<string>ODLBServiceItem:fr.chachatelier.pierre.LaTeXiT - LaTeXiT/Typeset LaTeX Text and put result into clipboard</string>
+		<string>ODLBServiceItem:edu.ucsd.cs.mmccrack.bibdesk - BibDesk/Complete Citation</string>
+		<string>ODLBURLItem:http://x2224web.com/</string>
+		<string>ODLBURLItem:https://nhentai.net/artist/mda-starou/</string>
+		<string>ODLBSearchTemplateItem:5E824C1D-86E3-4C29-8CCA-6260A262D77E</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E5%B1%8F%E5%B9%95%E9%AB%92%E4%BA%86%E6%BC%A2%E5%8C%96%E7%B5%84</string>
+		<string>ODLBThemeItem:at.obdev.LaunchBar.theme.Base</string>
+		<string>ODLBSearchTemplateItem:145E45F7-E172-43BC-8CA3-38DFAD4336F8</string>
+		<string>ODLBSearchTemplateItem:19FBAEBE-AC56-4D02-AC1D-E0DD978AFB7C</string>
+		<string>ODLBAlbum:君の名は。 (RADWIMPS)</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=nanao</string>
+		<string>ODLBCategory:Movie File</string>
+		<string>ODLBCategory:3rd Party Formats</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.CopyScreenshotOfSelectedArea</string>
+		<string>ODLBCategory:CSS</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E3%81%BF%E3%81%A1%E3%81%8D%E3%82%93%E3%81%90</string>
+		<string>ODLBCategory:Interface Builder Storyboard Document</string>
+		<string>ODLBContactItem:com.apple.AddressBook:BB00AD33-DEF4-4900-B8CC-64AA1DD0DD4A:ABPerson</string>
+		<string>ODLBCategory:R Markdown File</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E7%BB%85%E5%A3%AB%E4%BB%93%E5%BA%93</string>
+		<string>ODLBCategory:Personal Contact</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.SetDesktopBackground</string>
+		<string>ODLBCategory:Education Application</string>
+		<string>ODLBSharingServiceAction:com.apple.share.Mail.compose</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.iTunesUpdateAllPodcasts</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=nasipasuta</string>
+		<string>ODLBServiceItem:edu.ucsd.cs.mmccrack.bibdesk - BibDesk/New Document With Selection</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E6%B0%B4%E9%BE%8D%E6%95%AC</string>
+		<string>ODLBSearchTemplateItem:F42871B1-AF1D-4EF5-BB49-2F8158CD1B62</string>
+		<string>ODLBCategory:Music Application</string>
+		<string>ODLBContactItem:com.apple.AddressBook:DFDD394C-38AE-4CFA-9868-DEBBD60236BA:ABPerson</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=fuyuno+mikan</string>
+		<string>ODLBContactGroup:E1727610-6D95-4DA9-A60D-032DDE8860B7:ABGroup</string>
+		<string>ODLBCategory:PowerPoint Presentation (.Pptx)</string>
+		<string>ODLBCategory:Windows Icon Image</string>
+		<string>ODLBCategory:VSCodium Document</string>
+		<string>ODLBSearchTemplateItem:68D96BE1-9D5C-4AC0-B10F-F0B319BDCC14</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=matsukawa</string>
+		<string>ODLBGenre:语音备忘录</string>
+		<string>ODLBCategory:Google Document</string>
+		<string>ODLBContactItem:com.apple.AddressBook:2A09B669-78E4-451D-B69E-EBDFA60F29A6:ABPerson</string>
+		<string>ODLBCalendarItem:752CBC25-B128-44F5-A016-83B2E6689A9A</string>
+		<string>ODLBCategory:Phone Number</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/CSC1001/__pycache__</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=amagi+michihito</string>
+		<string>ODLBCategory:JPEG Image</string>
+		<string>ODLBSearchTemplateItem:87F10D02-99E5-4DCD-A7AC-7F4987C5697F</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/116010252许行飞繁.docx</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=maruta</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E4%B8%AD%E5%9B%BD%E7%BF%BB%E8%A8%B3</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E8%BF%99%E5%BE%88%E6%81%B6%E5%A0%95%E6%B1%89%E5%8C%96%E7%BB%84</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/CSC1001/Assignment/2</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E6%AF%9B%E7%8E%89%E7%89%9B%E4%B9%B3</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/中文/《史記·項羽本紀》.pdf</string>
+		<string>ODLBServiceItem:edu.ucsd.cs.mmccrack.bibdesk - BibDesk/Complete Cite Key</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=inago</string>
+		<string>ODLBCategory:Mail Service</string>
+		<string>ODLBSearchTemplateItem:8BF6ECC9-1A7A-48F7-8EDC-CD7434E2763B</string>
+		<string>ODLBCategory:Network Location</string>
+		<string>ODLBScriptAction:xuxife.LaunchBar.action.magnet-link</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=Number+2&amp;page=1</string>
+		<string>ODLBContactItem:com.apple.AddressBook:B2B671E7-862B-4F94-93FE-AC9C65A9C65E:ABPerson</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W1/0课程简介课件.pdf</string>
+		<string>ODLBContactItem:com.apple.AddressBook:0A5AB4BB-3FCF-402E-BF90-C0DEB8EE9095:ABPerson</string>
+		<string>ODLBSearchTemplateItem:http://msxml.excite.com/info.xcite/search/web/*</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=suzuki+kyoutarou</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E6%83%B3%E6%8A%B1%E9%9B%B7%E5%A6%88%E6%B1%89%E5%8C%96%E7%BB%84</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.IncreaseVolume</string>
+		<string>ODLBSearchTemplateItem:EBED918D-725F-4642-91C2-70109B79C0EE</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.CopyScreenshotOfSelectedWindowWithoutShadow</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.iTunesPause</string>
+		<string>ODLBCategory:Mobile Phone Number</string>
+		<string>ODLBCategory:Patch File</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E6%9C%A8%E8%B0%B7%E6%A4%8E</string>
+		<string>ODLBCategory:Bookmark Folder</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.iTunesPlayPause</string>
+		<string>ODLBCategory:User Account</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/CSC1001/Assignment/116010252-2.zip</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E3%82%A2%E3%82%AB%E3%82%BF%E3%83%9E+%28%E6%A1%9C%E5%90%B9%E9%9B%AA%E3%81%AD%E3%82%8B%29</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W2/2.书信课件-第一次课.pdf</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W11/导修材料</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E7%94%98%E8%9C%9C%E3%81%93%E3%81%86%E3%81%99%E3%81%91</string>
+		<string>ODLBPreviousRecipientItem:info@sadcars.com</string>
+		<string>ODLBCategory:Unix Executable File</string>
+		<string>ODLBCategory:Chromium Extra</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=maeshima+ryou</string>
+		<string>ODLBCategory:Contact</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.MuteOff</string>
+		<string>ODLBSearchTemplateItem:C70AE711-04B5-432A-B129-52EB40737A99</string>
+		<string>ODLBURLItem:https://nhentai.net/g/241521/</string>
+		<string>ODLBCategory:Folder Actions Setup Service</string>
+		<string>ODLBServiceItem:com.apple.Safari - Add to Reading List</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/期末论文相关材料/期末主观讨论题最终版本.pdf</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E5%A7%89%E4%BD%93%E9%A8%93%E5%A5%B3%E5%AD%A6%E5%AF%AE</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/中文/棋王资料/_吃相_遮蔽下的_世相_与_真相_再读阿城的_棋王_马晓雁.pdf</string>
+		<string>ODLBCategory:Python Bytecode Document</string>
+		<string>ODLBServiceItem:com.ThomsonResearchSoft.EndNote.ENService - EndNote/Find Citation(s)...</string>
+		<string>ODLBCategory:JavaScript</string>
+		<string>ODLBPreviousRecipientItem:info@carsiceland.com</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W9/导修材料/《對倒》的語言生動美.pdf</string>
+		<string>ODLBCategory:MPEG-4 Movie</string>
+		<string>ODLBPlaylist:06BBE3BB21D007CA</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E5%85%94%E5%8F%B8%E5%A7%AC%E6%BC%A2%E5%8C%96%E7%B5%84</string>
+		<string>ODLBCategory:Contact Group</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.iTunesPreviousSong</string>
+		<string>ODLBPathItem:~/Library/Application Support/LaunchBar/Snippets/asd.txt</string>
+		<string>ODLBSharingServiceAction:com.apple.iphonesimulator.ShareExtension</string>
+		<string>ODLBSearchTemplateItem:5B148375-C713-478B-A4F8-B38957871117</string>
+		<string>ODLBCategory:Postal Address</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=panbai</string>
+		<string>ODLBSearchTemplateItem:http://blogsearch.google.com/blogsearch?q=*</string>
+		<string>ODLBCalendarItem:79FF4FCA-147B-4A31-A82D-AF1CE9D834E2</string>
+		<string>ODLBCategory:Graphics &amp; Design Application</string>
+		<string>ODLBTrackItem:198A2BEB5EA27684</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.Mute</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.SafariTabs</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E9%9D%B4%E4%B8%8B</string>
+		<string>ODLBCalendarItem:A3412808-DE92-40E1-A4B1-FB5F27162A12</string>
+		<string>ODLBSearchTemplateItem:8F556692-C267-4977-824D-96C832110BA5</string>
+		<string>ODLBServiceItem:fr.chachatelier.pierre.LaTeXiT - LaTeXiT/Typeset LaTeX Maths align and put result into clipboard</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/CSC1001/Assignment/116010252 A4.zip</string>
+		<string>ODLBCalendarItem:03B3EC0D-507E-443A-9DE2-22C0D316C897</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/CSC1002/__pycache__</string>
+		<string>ODLBScriptAction:xuxife.LaunchBar.action.Medium</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W5/W5 导修/第五组导修.pptx</string>
+		<string>ODLBServiceItem:com.ThomsonResearchSoft.EndNote.ENService - EndNote/Format Paper...</string>
+		<string>ODLBContactItem:com.apple.AddressBook:46A881B7-4080-4706-82CB-CAD368758948:ABPerson</string>
+		<string>ODLBPlaylist:EB3B9CCA21328DB1</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E4%BD%90%E4%BC%AF%E9%81%94%E4%B9%9F</string>
+		<string>ODLBSearchTemplateItem:081FFCFF-5B19-4656-B1B1-088461F9E16B</string>
+		<string>ODLBContactGroup:F35B2184-A199-481A-AC87-E397B03C9068:ABGroup</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=ARESTICA</string>
+		<string>ODLBSearchTemplateItem:https://www.google.com/search?btnI&amp;q=*</string>
+		<string>ODLBCategory:Objective-C Source</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/Humanity/116010252-RJ-4.docx</string>
+		<string>ODLBCategory:Dash Sync</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E7%84%A1%E9%82%AA%E6%B0%97%E6%BC%A2%E5%8C%96%E7%B5%84</string>
+		<string>ODLBPreviousRecipientItem:arctic@arctic.is</string>
+		<string>ODLBSearchTemplateItem:F4DB589B-1834-4F9C-887F-4679117D522B</string>
+		<string>ODLBCategory:EN Service</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=shimajiya</string>
+		<string>ODLBServiceItem:edu.ucsd.cs.mmccrack.bibdesk - BibDesk/Add to Bibliography</string>
+		<string>ODLBContactItem:com.apple.AddressBook:0F43EE9C-EBAB-4CFB-BDDA-40620B156647:ABPerson</string>
+		<string>ODLBCalendarItem:A6A975C3-E489-45A3-86B9-81C1DCDA1CD9</string>
+		<string>ODLBCategory:PowerPoint 97-2003 Presentation (.Ppt)</string>
+		<string>ODLBSearchTemplateItem:itms://phobos.apple.com/WebObjects/MZSearch.woa/wa/advancedSearchResults?composerTerm=*</string>
+		<string>ODLBSearchWikimediaAction:en.wikiquote</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/116010252许行飞.docx</string>
+		<string>ODLBCopyAndPasteNameAction</string>
+		<string>ODLBServiceItem:fr.chachatelier.pierre.LaTeXiT - LaTeXiT/Typeset LaTeX Maths display</string>
+		<string>ODLBCategory:Reminder List</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=drop+dead</string>
+		<string>ODLBURLItem:https://nhentai.net/artist/ekakibit/</string>
+		<string>ODLBCategory:Open Virtualization Format Archive</string>
+		<string>ODLBCategory:FileMerge Service</string>
+		<string>ODLBThemeItem:at.obdev.LaunchBar.theme.Vintage</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E5%A4%A2%E4%B9%8B%E8%A1%8C%E8%B9%A4%E6%BC%A2%E5%8C%96%E7%B5%84</string>
+		<string>ODLBCategory:Python Script</string>
+		<string>ODLBPreviousRecipientItem:hertz@hertz.is</string>
+		<string>ODLBURLItem:https://multithreaded.stitchfix.com/algorithms/blog/</string>
+		<string>ODLBCategory:Plain Text Document</string>
+		<string>ODLBContactItem:com.apple.AddressBook:9F8CDE78-94C1-4853-B3E0-5BC115B5F6F6:ABPerson</string>
+		<string>ODLBContactItem:com.apple.AddressBook:B897ADDD-C885-4463-89B0-0CC50DB2F108:ABPerson</string>
+		<string>ODLBCategory:Diagnostic Report</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.EvernoteNewNoteWithSelectedEmail</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/期末论文相关材料/期末論文範本.pdf</string>
+		<string>ODLBSearchTemplateItem:8CE85A1E-8D74-41BE-A65D-24B445CCBC4D</string>
+		<string>ODLBCategory:Contact Note</string>
+		<string>ODLBAlbum:语音备忘录 (许凤明的 iPhone)</string>
+		<string>ODLBContactItem:com.apple.AddressBook:80F2F9AD-0027-4B8B-9839-B1191BDD989D:ABPerson</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/Humanity/116010252-RJ-7.docx</string>
+		<string>ODLBPlaylist:D3FFFA9FCAE71D27</string>
+		<string>ODLBCategory:Document</string>
+		<string>ODLBTrackItem:CA435F88D3656A82</string>
+		<string>ODLBPlaylist:12F1FDC44143EFD0</string>
+		<string>ODLBContactItem:com.apple.AddressBook:6C0FEA28-856D-49D5-9E66-6CEF5056C797:ABPerson</string>
+		<string>ODLBSearchTemplateItem:1503BD7E-DC1E-49D8-8139-A6F1447AA832</string>
+		<string>ODLBServiceItem:com.apple.dt.Instruments - Activity Monitor</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/期末论文相关材料</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E5%A4%A7%E6%A7%8D%E8%91%A6%E4%BA%BA</string>
+		<string>ODLBContactItem:com.apple.AddressBook:5255F6DF-5037-4785-B030-B3CE546198E6:ABPerson</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/中文/期中作文：梦想.pdf</string>
+		<string>ODLBContactItem:com.apple.AddressBook:DECD8F97-E663-49D6-9A73-77AC617FEACB:ABPerson</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W9/导修材料</string>
+		<string>ODLBCategory:BibDesk Service</string>
+		<string>ODLBSearchTemplateItem:ED6DA4EF-D9C1-416B-A7C4-764FD40856E3</string>
+		<string>ODLBSearchTemplateItem:http://www.technorati.com/search/*</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W11/《史記·項羽本紀》.pdf</string>
+		<string>ODLBPlaylist:0EC15360B2FBFEFE</string>
+		<string>ODLBCategory:Previous Recipient</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=%E3%82%A2%E3%83%83%E3%83%88%E3%83%9B%E3%83%BC%E3%83%A0%E9%85%92%E5%AE%B6%28%E3%81%9F%E3%81%8F%E3%81%AE%E3%81%BF%29&amp;page=2</string>
+		<string>ODLBURLItem:https://nhentai.net/artist/mojarin/</string>
+		<string>ODLBURLItem:https://nhentai.net/parody/azur-lane/</string>
+		<string>ODLBCalendarItem:A78B07A6-7806-4FE1-A73F-BEA87A154477</string>
+		<string>ODLBCategory:Instruments Service</string>
+		<string>ODLBServiceItem:com.apple.dt.Instruments - Allocations &amp; Leaks</string>
+		<string>ODLBURLItem:https://www.wnacg.org/#</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.RunShellCommand</string>
+		<string>ODLBURLItem:https://nhentai.net/artist/honryo-hanaru/</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/CSC1001/Assignment/2/116010252.zip</string>
+		<string>ODLBArtist:RADWIMPS</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.SendIMessage</string>
+		<string>ODLBServiceItem:com.apple.dt.Instruments - File Activity</string>
+		<string>ODLBCategory:Keyboard Maestro Macro Sync File</string>
+		<string>ODLBContactGroup:D3BFA7E7-1739-4F93-9A16-EF5579988944:ABGroup</string>
+		<string>ODLBURLItem:https://nhentai.net/g/248491/</string>
+		<string>ODLBCalendarItem:906C221D-EB93-4DCA-AD18-5F643D0D2F4D</string>
+		<string>ODLBCategory:Email Address</string>
+		<string>ODLBURLItem:https://nhentai.net/g/231498/</string>
+		<string>ODLBPlaylist:A5CAA3542A4D7AC9</string>
+		<string>ODLBServiceItem:com.apple.ImageCaptureService - Import Image</string>
+		<string>ODLBCategory:PNG Image</string>
+		<string>ODLBSearchTemplateItem:2AF32EF0-4877-410F-B04C-2EB4D069FE94</string>
+		<string>ODLBPathItem:~/Google 云端硬盘/2016 First Semester/Chinese/CHI W11/导修/《自祭文》.pptx</string>
+		<string>ODLBContactItem:com.apple.AddressBook:8A6852A5-6727-4F01-B3D5-57730DBF027D:ABPerson</string>
+		<string>ODLBCategory:Apple MPEG-4 Audio File</string>
+		<string>ODLBCategory:Rez Source</string>
+		<string>ODLBCalendarItem:53634737-F453-456D-BEB6-19C1E1E1D5A8</string>
+		<string>ODLBCategory:Mp</string>
+		<string>ODLBPlaylist:A3F10389688F2A92</string>
+		<string>ODLBCategory:Encapsulated PostScript File</string>
+		<string>ODLBContactGroup:E693B3FD-B148-4D55-9F9E-D2EF6EA55957:ABGroup</string>
+		<string>ODLBCalendarItem:4A82E62C-EE21-4846-957F-AB1B1039FD5D</string>
+		<string>ODLBServiceItem:fr.chachatelier.pierre.LaTeXiT - LaTeXiT/Typeset LaTeX Maths inline</string>
+		<string>ODLBSearchTemplateItem:itms://phobos.apple.com/WebObjects/MZSearch.woa/wa/advancedSearchResults?albumTerm=*</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.iTunesRewind</string>
+		<string>ODLBCategory:HTML Text</string>
+		<string>ODLBCategory:GZip Archive</string>
+		<string>ODLBCategory:PDF Document</string>
+		<string>ODLBServiceItem:edu.ucsd.cs.mmccrack.bibdesk - BibDesk/Complete Text Bibliography</string>
+		<string>ODLBCategory:Quiver Library</string>
+		<string>ODLBServiceItem:fr.chachatelier.pierre.LaTeXiT - LaTeXiT/Typeset LaTeX Maths display and put result into clipboard</string>
+		<string>ODLBURLItem:https://nhentai.net/search/?q=kakao</string>
+		<string>ODLBCategory:Calendar</string>
+		<string>ODLBPlaylist:47145D69D3CA479C</string>
+		<string>ODLBScriptAction:at.obdev.LaunchBar.action.EvernoteNewNoteWithFile</string>
+		<string>ODLBCalendarItem:71657870-1C53-46DF-A3CA-4878DC28D35A</string>
+		<string>ODLBContactItem:com.apple.AddressBook:3E2294AE-7BE0-4761-8798-0EE3400C61AD:ABPerson</string>
+		<string>ODLBContactItem:com.apple.AddressBook:005C97EA-E10D-4342-8E7E-846EB94502B9:ABPerson</string>
+		<string>ODLBCalendarItem:58574901-0686-40FD-868F-86C17633520A</string>
+		<string>ODLBCopyAndPasteAsPlainTextAction</string>
+		<string>ODLBPlaylist:C17D801F550C6D13</string>
+		<string>ODLBCategory:XML Text</string>
+		<string>ODLBURLItem:https://nhentai.net/artist/typehatena/</string>
+	</array>
+	<key>itemIdentifierVersion</key>
+	<integer>4294967303</integer>
+	<key>rules</key>
+	<array>
+		<dict>
+			<key>className</key>
+			<string>ODLBPrefPanesRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBSafariTopSitesRule</string>
+			<key>enabled</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBCategoriesRule</string>
+		</dict>
+		<dict>
+			<key>abbreviatedPath</key>
+			<string>_chromeBookmarksPath</string>
+			<key>className</key>
+			<string>ODLBBookmarksRule</string>
+			<key>detectSearchTemplates</key>
+			<integer>0</integer>
+			<key>enabled</key>
+			<integer>0</integer>
+			<key>scope</key>
+			<integer>1</integer>
+			<key>subsearchOnly</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBActionsRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBEmojiRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBSafariCloudTabsRule</string>
+			<key>enabled</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBCalendarsRule</string>
+			<key>enabled</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBWorkflowsRule</string>
+		</dict>
+		<dict>
+			<key>abbreviatedPath</key>
+			<string>_chromeHistoryPath</string>
+			<key>className</key>
+			<string>ODLBHistoryRule</string>
+			<key>enabled</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>aliasName</key>
+			<string>Unix Directories</string>
+			<key>className</key>
+			<string>ODLBListRule</string>
+			<key>enabled</key>
+			<integer>0</integer>
+			<key>list</key>
+			<array>
+				<string>/bin</string>
+				<string>/etc</string>
+				<string>/sbin</string>
+				<string>/tmp</string>
+				<string>/usr</string>
+				<string>/usr/bin</string>
+				<string>/usr/local</string>
+				<string>/usr/local/bin</string>
+				<string>/usr/sbin</string>
+				<string>/var</string>
+			</array>
+		</dict>
+		<dict>
+			<key>abbreviatedSpecificPlaces</key>
+			<array>
+				<string>/Applications</string>
+				<string>/System/Library/CoreServices</string>
+				<string>~/Applications</string>
+				<string>~/Library/Printers</string>
+			</array>
+			<key>className</key>
+			<string>ODLBApplicationsRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBMusicRule</string>
+			<key>enabled</key>
+			<integer>0</integer>
+			<key>includeLovedSongsInBestOfLists</key>
+			<integer>0</integer>
+			<key>removeFormationFromArtistName</key>
+			<integer>0</integer>
+			<key>removeParenthesizedTextFromArtistName</key>
+			<integer>0</integer>
+			<key>splitArtists</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBContactsRule</string>
+			<key>enabled</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBNetworkLocationsRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBMountedVolumesRule</string>
+		</dict>
+		<dict>
+			<key>abbreviatedPath</key>
+			<string>~/Google Drive</string>
+			<key>className</key>
+			<string>ODLBFolderContentsRule</string>
+			<key>skipQualifiers</key>
+			<array>
+				<string>./Calibre 书库</string>
+			</array>
+			<key>subfolderLevels</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBSafariReadingListRule</string>
+			<key>enabled</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBManagedSearchTemplatesRule</string>
+		</dict>
+		<dict>
+			<key>aliasName</key>
+			<string>Unix Executables</string>
+			<key>className</key>
+			<string>ODLBListRule</string>
+			<key>enabled</key>
+			<integer>0</integer>
+			<key>list</key>
+			<array>
+				<string>/usr/bin/cal</string>
+				<string>/bin/date</string>
+				<string>/usr/bin/dig</string>
+				<string>/usr/bin/ftp</string>
+				<string>/usr/bin/host</string>
+				<string>/usr/bin/hostinfo</string>
+				<string>/usr/bin/man</string>
+				<string>/usr/sbin/netstat</string>
+				<string>/sbin/ping</string>
+				<string>/usr/bin/sftp</string>
+				<string>/usr/bin/ssh</string>
+				<string>/usr/bin/su</string>
+				<string>/usr/bin/telnet</string>
+				<string>/usr/bin/top</string>
+				<string>/usr/sbin/traceroute</string>
+				<string>/usr/bin/uptime</string>
+			</array>
+		</dict>
+		<dict>
+			<key>abbreviatedPath</key>
+			<string>~</string>
+			<key>className</key>
+			<string>ODLBFolderContentsRule</string>
+			<key>subfolderLevels</key>
+			<integer>1</integer>
+			<key>typeCollectionIdentifier</key>
+			<string>@folder</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBReminderListsRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBCloudDocumentsRule</string>
+		</dict>
+		<dict>
+			<key>abbreviatedPath</key>
+			<string>~/Downloads</string>
+			<key>className</key>
+			<string>ODLBFolderContentsRule</string>
+			<key>subfolderLevels</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBTagsRule</string>
+		</dict>
+		<dict>
+			<key>abbreviatedPath</key>
+			<string>~/Documents</string>
+			<key>className</key>
+			<string>ODLBFolderContentsRule</string>
+			<key>skipQualifiers</key>
+			<array>
+				<string>iTunes Music</string>
+			</array>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBCustomSearchTemplatesRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBUserAccountsRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBSnippetsRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBDockRule</string>
+		</dict>
+		<dict>
+			<key>abbreviatedPath</key>
+			<string>~/Desktop</string>
+			<key>className</key>
+			<string>ODLBFolderContentsRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBServicesRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBThemesRule</string>
+		</dict>
+	</array>
+	<key>typeCollections</key>
+	<array>
+		<dict>
+			<key>definition</key>
+			<string>htm, html, htmld</string>
+			<key>identifier</key>
+			<string>1</string>
+			<key>name</key>
+			<string>HTML Files</string>
+		</dict>
+		<dict>
+			<key>definition</key>
+			<string>'RTF ', 'SLD8', 'TEXT', 'W6BN', 'W8BN', 'WDBN', 'XLS8', doc, docx, pps, ppsx, ppt, pptx, rtf, txt, xls, xlsx</string>
+			<key>identifier</key>
+			<string>4</string>
+			<key>name</key>
+			<string>MS Office Documents</string>
+		</dict>
+		<dict>
+			<key>definition</key>
+			<string>c, cpp, h, java, m, nib, php, php3, php4, pl</string>
+			<key>identifier</key>
+			<string>2</string>
+			<key>name</key>
+			<string>Source Files</string>
+		</dict>
+		<dict>
+			<key>definition</key>
+			<string>'CWWP', cwk</string>
+			<key>identifier</key>
+			<string>3</string>
+			<key>name</key>
+			<string>AppleWorks Documents</string>
+		</dict>
+	</array>
+	<key>version</key>
+	<integer>19</integer>
+</dict>
+</plist>
