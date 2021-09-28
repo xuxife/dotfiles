@@ -1,11 +1,151 @@
 {
-    "workbench.colorTheme": "GitHub Dark Default",
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.accessibilitySupport": "off",
-    "terminal.external.osxExec": "iTerm2.app",
+    // Workbench
+    "workbench.colorTheme": "GitHub Dark",
+
+    // Terminal
     "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.external.osxExec": "iTerm2.app",
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+
+    // Editor
     "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 14,
-    "editor.lineNumbers": "relative"
+    "editor.tabCompletion": "on",
+    "editor.lineNumbers": "relative",
+    "editor.formatOnType": true,
+    "editor.quickSuggestionsDelay": 100,
+
+    // Files
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+
+    // Explorer
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    // Files
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+
+    // vim
+    "vim.easymotion": true,
+    "vim.neovimPath": "/usr/local/bin/nvim",
+    "vim.enableNeovim": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+
+    // Python3
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.autoComplete.addBrackets": true,
+
+    // Go
+    "go.gopath": "/Users/xuxife/go",
+    "go.autocompleteUnimportedPackages": true,
+    "go.liveErrors": {
+        "enabled": true,
+        "delay": 500
+    },
+    "go.lintTool": "revive",
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.snippetSuggestions": "none",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        }
+    },
+    "gopls": {
+        "usePlaceholders": true,
+    },
+
+    // Git
+
+    // LaTeX
+    "latex-workshop.latex.tools": [
+        {
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ],
+            "name": "Step 1: xelatex"
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "toolchain",
+            "tools": [
+                "Step 1: xelatex"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.latex.autoBuild.run": "never",
+    //"latex-workshop.latex.clean.enabled": true,
+
+    // Gitlens
+
+    // C_Cpp
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "C_Cpp.default.includePath": [
+        "/usr/include",
+        "/usr/local/include",
+    ],
+
+    // rust
+    "rust.all_features": true,
+    "rust.rustfmt_path": "rustfmt",
+
+    // julia
+    "julia.executablePath": "/usr/local/bin/julia",
+    "julia.enableTelemetry": true,
+    "julia.enableCrashReporter": true,
+
+    // cSpell
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "c",
+        "cpp",
+        "csharp",
+        "css",
+        "git-commit",
+        "go",
+        "handlebars",
+        "html",
+        "jade",
+        "java",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "jsonc",
+        "julia",
+        "latex",
+        "less",
+        "markdown",
+        "php",
+        "plaintext",
+        "pug",
+        "python",
+        "restructuredtext",
+        "rust",
+        "scala",
+        "scss",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yaml",
+        "yml"
+    ],
 }
