@@ -14,12 +14,13 @@ if status is-interactive
     alias sf='fasd -sif'     # interactive file selection
     alias z='fasd_cd -d'     # cd, same functionality as j in autojump
     alias zz='fasd_cd -d -i' # cd with interactive selection
+
+    {{ if (eq .chezmoi.hostname "Xingfeis-Mac-Pro") }}
+    alias enlist='bass source /Volumes/Source/git/src/init.sh'
+    {{ end }}
 end
 
-function replace_home_directory_in_fish_variables
-    sed -i '' "s|$HOME|\x7e|g" ~/.config/fish/fish_variables
-end
-
+### START stash commandline
 function __commandline_stash -d 'Stash current command line'
     set -g __stash_command_position (commandline -C)
     set -g __stash_command (commandline -b)
@@ -46,3 +47,4 @@ function __commandline_toggle -d 'Stash current commandline if not empty, otherw
         __commandline_pop
     end
 end
+### END stash commandline
