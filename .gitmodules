@@ -1,21 +1,3 @@
 [submodule "dot_config/dot_hammerspoon/Spoons/VimMode.spoon"]
 	path = dot_config/dot_hammerspoon/Spoons/VimMode.spoon
 	url = https://github.com/dbalatero/VimMode.spoon.git
-[submodule "dot_config/nvim/plugged/coc.nvim"]
-	path = dot_config/nvim/plugged/coc.nvim
-	url = https://github.com/neoclide/coc.nvim.git
-[submodule "dot_config/nvim/plugged/fzf"]
-	path = dot_config/nvim/plugged/fzf
-	url = https://github.com/junegunn/fzf.git
-[submodule "dot_config/nvim/plugged/fzf.vim"]
-	path = dot_config/nvim/plugged/fzf.vim
-	url = https://github.com/junegunn/fzf.vim.git
-[submodule "dot_config/nvim/plugged/nerdtree"]
-	path = dot_config/nvim/plugged/nerdtree
-	url = https://github.com/preservim/nerdtree.git
-[submodule "dot_config/nvim/plugged/vim-airline"]
-	path = dot_config/nvim/plugged/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule "dot_config/nvim/plugged/vim-polyglot"]
-	path = dot_config/nvim/plugged/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot.git
