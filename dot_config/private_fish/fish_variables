@@ -19,6 +19,7 @@ SETUVAR _fish_abbr_grs:git\x20restore
 SETUVAR _fish_abbr_grss:git\x20restore\x20\x2d\x2dstaged
 SETUVAR _fish_abbr_gso:git\x20show
 SETUVAR _fish_abbr_gst:git\x20status
+SETUVAR _fish_abbr_l:lfcd
 SETUVAR _fish_abbr_lg:lazygit
 SETUVAR _fish_abbr_nv:nvim
 SETUVAR _fisher_acomagu_2F_fish_2D_async_2D_prompt_files:\x7e/\x2econfig/fish/conf\x2ed/__async_prompt\x2efish
