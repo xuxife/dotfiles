@@ -11,6 +11,7 @@ set shiftwidth=4            " width for autoindents
 set smartindent             " indent a new line the same amount as the line just typed
 set relativenumber          " add relative line numbers
 set wildmode=longest,list   " get bash-like tab completions
+set viminfo^=%              " remember opened buffers
 filetype plugin indent on   " allows auto-indenting depending on file type
 syntax on                   " syntax highlighting
 
@@ -19,6 +20,11 @@ nnoremap <SPACE> <Nop>
 let mapleader=' '
 nnoremap <leader>s :update<enter>
 nnoremap <leader>q :q<enter>
+" buffer
+nnoremap <leader>x :bd<enter>
+nnoremap <leader>b :Buffers<enter>
+nnoremap <leader>n :bn<enter>
+nnoremap <leader>p :bp<enter>
 
 " Plugin
 call plug#begin()
@@ -29,7 +35,21 @@ call plug#begin()
     Plug 'sheerun/vim-polyglot'
     Plug 'vim-airline/vim-airline'
     Plug 'OmniSharp/omnisharp-vim'
+    Plug 'sonph/onehalf', { 'rtp': 'vim' }
 call plug#end()
+
+""" theme
+set t_Co=256
+set cursorline
+colorscheme onehalfdark
+let g:airline_theme='onehalfdark'
+
+""" Airline
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 """ OmniSharp
 let g:OmniSharp_selector_ui = 'fzf'
