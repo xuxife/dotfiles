@@ -23,9 +23,10 @@ SETUVAR _fish_abbr_lg:lazygit
 SETUVAR _fish_abbr_n:nnn
 SETUVAR _fish_abbr_nv:nvim
 SETUVAR _fisher_acomagu_2F_fish_2D_async_2D_prompt_files:\x7e/\x2econfig/fish/conf\x2ed/__async_prompt\x2efish
-SETUVAR _fisher_edc_2F_bass_files:/Users/xingfeixu/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/xingfeixu/\x2econfig/fish/functions/bass\x2efish
+SETUVAR _fisher_edc_2F_bass_files:\x7e/\x2econfig/fish/functions/__bass\x2epy\x1e\x7e/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eacomagu/fish\x2dasync\x2dprompt\x1eedc/bass
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eacomagu/fish\x2dasync\x2dprompt\x1eedc/bass\x1exuxife/fasd
+SETUVAR _fisher_xuxife_2F_fasd_files:\x7e/\x2econfig/fish/functions/__fasd_print_completion\x2efish\x1e\x7e/\x2econfig/fish/functions/a\x2efish\x1e\x7e/\x2econfig/fish/functions/d\x2efish\x1e\x7e/\x2econfig/fish/functions/f\x2efish\x1e\x7e/\x2econfig/fish/functions/fasd_cd\x2efish\x1e\x7e/\x2econfig/fish/functions/s\x2efish\x1e\x7e/\x2econfig/fish/functions/sd\x2efish\x1e\x7e/\x2econfig/fish/functions/sf\x2efish\x1e\x7e/\x2econfig/fish/functions/z\x2efish\x1e\x7e/\x2econfig/fish/functions/zz\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/__fasd_run\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/aliases\x2efish\x1e\x7e/\x2econfig/fish/completions/a\x2efish\x1e\x7e/\x2econfig/fish/completions/d\x2efish\x1e\x7e/\x2econfig/fish/completions/f\x2efish\x1e\x7e/\x2econfig/fish/completions/fasd\x2efish\x1e\x7e/\x2econfig/fish/completions/s\x2efish\x1e\x7e/\x2econfig/fish/completions/sd\x2efish\x1e\x7e/\x2econfig/fish/completions/sf\x2efish\x1e\x7e/\x2econfig/fish/completions/z\x2efish\x1e\x7e/\x2econfig/fish/completions/zz\x2efish
 SETUVAR fish_color_autosuggestion:BD93F9
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:F8F8F2
