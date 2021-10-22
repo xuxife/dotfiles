@@ -36,6 +36,7 @@ call plug#begin()
     Plug 'vim-airline/vim-airline'
     Plug 'OmniSharp/omnisharp-vim'
     Plug 'sonph/onehalf', { 'rtp': 'vim' }
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 """ theme
