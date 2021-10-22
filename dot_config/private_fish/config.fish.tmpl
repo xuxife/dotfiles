@@ -6,6 +6,8 @@ if status is-interactive
     bind \cs __commandline_toggle
     bind \cx\cc fzf-cd-widget
 
+    proxy
+
     {{ if (eq .chezmoi.hostname "Xingfeis-Mac-Pro") }}
     alias enlist='bass source /Volumes/Source/git/src/init.sh'
     {{ end }}
