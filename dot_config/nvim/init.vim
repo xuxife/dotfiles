@@ -18,13 +18,13 @@ syntax on                   " syntax highlighting
 inoremap jk <esc>
 nnoremap <SPACE> <Nop>
 let mapleader=' '
-nnoremap <leader>s :update<enter>
-nnoremap <leader>q :q<enter>
+nnoremap <silent> <leader>s :update<enter>
+nnoremap <silent> <leader>q :q<enter>
 " buffer
-nnoremap <leader>x :bd<enter>
-nnoremap <leader>b :Buffers<enter>
-nnoremap <leader>n :bn<enter>
-nnoremap <leader>p :bp<enter>
+nnoremap <silent> <leader>x :bd<enter>
+nnoremap <silent> <leader>b :Buffers<enter>
+nnoremap <silent> <leader>n :bn<enter>
+nnoremap <silent> <leader>p :bp<enter>
 
 " Plugin
 call plug#begin()
