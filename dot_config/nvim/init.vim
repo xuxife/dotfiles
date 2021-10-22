@@ -26,6 +26,11 @@ nnoremap <silent> <leader>b :Buffers<enter>
 nnoremap <silent> <leader>n :bn<enter>
 nnoremap <silent> <leader>p :bp<enter>
 
+""" Language
+" autocmd FileType go nnoremap <buffer> <leader>lb :GoBuild<enter>
+" autocmd FileType go nnoremap <buffer> <leader>lr :GoRun .<enter>
+" autocmd FileType go nnoremap <buffer> <leader>lt :GoTest<enter>
+
 " Plugin
 call plug#begin()
     Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
@@ -34,9 +39,7 @@ call plug#begin()
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'sheerun/vim-polyglot'
     Plug 'vim-airline/vim-airline'
-    Plug 'OmniSharp/omnisharp-vim'
     Plug 'sonph/onehalf', { 'rtp': 'vim' }
-    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 """ theme
