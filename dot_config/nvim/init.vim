@@ -26,11 +26,6 @@ nnoremap <silent> <leader>b :Buffers<enter>
 nnoremap <silent> <leader>n :bn<enter>
 nnoremap <silent> <leader>p :bp<enter>
 
-""" Language
-" autocmd FileType go nnoremap <buffer> <leader>lb :GoBuild<enter>
-" autocmd FileType go nnoremap <buffer> <leader>lr :GoRun .<enter>
-" autocmd FileType go nnoremap <buffer> <leader>lt :GoTest<enter>
-
 " Plugin
 call plug#begin()
     Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
@@ -47,6 +42,7 @@ set t_Co=256
 set cursorline
 colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
+let g:airline#extensions#coc#enabled = 1
 
 """ Airline
 " Enable the list of buffers
@@ -80,14 +76,45 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+" format on enter, <cr> could be remapped by other vim plugin
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg . " " . expand('<cword>')
+  endif
+endfunction
+
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting code.
-"TODO nmap <leader>ff <Plug>(coc-format)
+nmap <leader>lf <Plug>(coc-format)
 
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Add `:OR` command for organize imports of the current buffer.
-command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+" command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+""" Go
+" autocmd FileType go nnoremap <buffer> <leader>lb :GoBuild<enter>
+" autocmd FileType go nnoremap <buffer> <leader>lr :GoRun .<enter>
+" autocmd FileType go nnoremap <buffer> <leader>lt :GoTest<enter>
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
+
