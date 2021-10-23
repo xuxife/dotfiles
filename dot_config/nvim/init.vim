@@ -35,6 +35,8 @@ call plug#begin()
     Plug 'sheerun/vim-polyglot'
     Plug 'vim-airline/vim-airline'
     Plug 'sonph/onehalf', { 'rtp': 'vim' }
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'fatih/vim-go'
 call plug#end()
 
 """ theme
@@ -113,8 +115,11 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
 """ Go
-" autocmd FileType go nnoremap <buffer> <leader>lb :GoBuild<enter>
-" autocmd FileType go nnoremap <buffer> <leader>lr :GoRun .<enter>
-" autocmd FileType go nnoremap <buffer> <leader>lt :GoTest<enter>
-autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
-
+autocmd FileType *.go nnoremap <buffer> <leader>lb :GoBuild<enter>
+autocmd FileType *.go nnoremap <buffer> <leader>lr :GoRun .<enter>
+autocmd FileType *.go nnoremap <buffer> <leader>lt :GoTest<enter>
+" autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
+let g:go_doc_balloon = 1
+let g:go_doc_popup_window = 1
+let g:go_def_mapping_enabled = 0
+let g:go_doc_keywordprg_enabled = 0
