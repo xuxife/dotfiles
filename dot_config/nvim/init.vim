@@ -1,3 +1,5 @@
+set hidden                  " switch buffer without saving
+set autoread                " auto reload current file
 set encoding=utf8           " encode in utf8
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching brackets.
@@ -28,7 +30,7 @@ nnoremap <silent> <leader>p :bp<enter>
 
 " Plugin
 call plug#begin()
-    Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
+    Plug '/usr/local/opt/fzf'
     Plug 'junegunn/fzf.vim'
     Plug 'preservim/nerdtree'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -37,6 +39,8 @@ call plug#begin()
     Plug 'sonph/onehalf', { 'rtp': 'vim' }
     Plug 'jiangmiao/auto-pairs'
     Plug 'fatih/vim-go'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-surround'
 call plug#end()
 
 """ theme
@@ -120,7 +124,7 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
-nnoremap <leader>lc :CocCommand 
+nnoremap <leader>lc :CocCommand<space>
 
 nmap <leader>lf :Format<enter>
 nmap <leader>ld :Fold<enter>
