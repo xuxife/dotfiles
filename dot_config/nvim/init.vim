@@ -107,10 +107,10 @@ function! s:show_documentation()
 endfunction
 
 " Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>crn <Plug>(coc-rename)
 
 " Formatting code.
-nmap <leader>lf <Plug>(coc-format)
+nmap <leader>cf <Plug>(coc-format)
 
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -121,8 +121,7 @@ command! -nargs=0 Format :call CocAction('format')
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
-nnoremap <leader>lc :CocCommand<space>
-nmap <leader>lf :Format<enter>
+nnoremap <leader>cc :CocCommand<space>
 
 """ Go
 autocmd FileType go nnoremap <buffer> <leader>lb :GoBuild<enter>
