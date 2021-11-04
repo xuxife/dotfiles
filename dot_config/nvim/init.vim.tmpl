@@ -41,6 +41,9 @@ call plug#begin()
     Plug 'fatih/vim-go'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-surround'
+    {{ if (eq .chezmoi.hostname "Xingfeis-Mac-Pro") }}
+    Plug 'OmniSharp/omnisharp-vim'
+    {{ end }}
 call plug#end()
 
 """ theme
