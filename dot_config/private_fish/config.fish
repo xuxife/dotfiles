@@ -5,10 +5,6 @@ if status is-interactive
     bind \cx\cc fzf-cd-widget
     bind \cg\cb fzf-git-branch-widget
     bind -M insert \cg\cb fzf-git-branch-widget
-
-    proxy
-
-    
 end
 
 function fzf-git-branch-widget -d "Show git branch"

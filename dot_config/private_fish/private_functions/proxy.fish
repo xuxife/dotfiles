@@ -3,5 +3,7 @@ function proxy -d 'set proxy'
 end
 
 function unproxy -d 'unset proxy'
-    set -e https_proxy http_proxy all_proxy
+    set -e https_proxy
+    set -e http_proxy
+    set -e all_proxy
 end
