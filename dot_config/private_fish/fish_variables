@@ -1,7 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_cz:chezmoi
 SETUVAR _fish_abbr_dn:dotnet
 SETUVAR _fish_abbr_gad:git\x20add
@@ -19,7 +19,6 @@ SETUVAR _fish_abbr_grs:git\x20restore
 SETUVAR _fish_abbr_grss:git\x20restore\x20\x2d\x2dstaged
 SETUVAR _fish_abbr_gso:git\x20show
 SETUVAR _fish_abbr_gst:git\x20status
-SETUVAR _fish_abbr_l:lfcd
 SETUVAR _fish_abbr_lg:lazygit
 SETUVAR _fish_abbr_nv:nvim
 SETUVAR _fisher_acomagu_2F_fish_2D_async_2D_prompt_files:\x7e/\x2econfig/fish/conf\x2ed/__async_prompt\x2efish
@@ -55,4 +54,5 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:{{ .chezmoi.homeDir }}/go/bin
+SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:/Users/xuxife/go/bin
