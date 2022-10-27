@@ -1,0 +1,35 @@
+{
+  "title": "Control A/E to head/end",
+  "rules": [
+    {
+      "description": "Map ctrl + a to head",
+      "manipulators": [
+        {
+          "type": "basic",
+          "manipulators": [
+            {
+                "conditions": [
+                    {
+                        "bundle_identifiers": [],
+                        "type": ""
+                    }
+                ]
+            } 
+          ]
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": ["control"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
