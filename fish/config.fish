@@ -1,25 +1,29 @@
 if status is-interactive
-    # starship
-    starship init fish | source
+    fish_vi_key_bindings
 
     # bind for stashing command
     bind \cs __commandline_toggle
-
-    # fasd
-    alias a='fasd -a'        # any
-    alias s='fasd -si'       # show / search / select
-    alias d='fasd -d'        # directory
-    alias f='fasd -f'        # file
-    alias sd='fasd -sid'     # interactive directory selection
-    alias sf='fasd -sif'     # interactive file selection
-    alias z='fasd_cd -d'     # cd, same functionality as j in autojump
-    alias zz='fasd_cd -d -i' # cd with interactive selection
+    bind \cx\cc fzf-cd-widget
+    bind \cg\cb fzf-git-branch-widget
+    bind -M insert \cg\cb fzf-git-branch-widget
 end
 
-function replace_home_directory_in_fish_variables
-    sed -i '' "s|$HOME|\x7e|g" ~/.config/fish/fish_variables
+function dev
+    set -l options (fish_opt -s s -l sync)
+    argparse $options -- $argv
+    if set -q _flag_sync
+        rsync -azvhP ~/repo/rp/ devbox:~/go/src/go.goms.io/aks/rp
+    end
+    ssh devbox
 end
 
+function fzf-git-branch-widget -d "Show git branch"
+    git branch | fzf --height=10% | string trim -c '* ' | read -l result
+    and commandline -i $result
+    commandline -f repaint
+end
+
+### START stash commandline
 function __commandline_stash -d 'Stash current command line'
     set -g __stash_command_position (commandline -C)
     set -g __stash_command (commandline -b)
@@ -46,3 +50,6 @@ function __commandline_toggle -d 'Stash current commandline if not empty, otherw
         __commandline_pop
     end
 end
+### END stash commandline
+
+starship init fish | source
