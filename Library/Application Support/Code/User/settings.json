@@ -1,6 +1,6 @@
 {
     // Workbench
-    "workbench.colorTheme": "GitHub Dark",
+    "workbench.colorTheme": "GitHub Dark Default",
 
     // Terminal
     "terminal.integrated.defaultProfile.osx": "fish",
@@ -148,4 +148,5 @@
         "yaml",
         "yml"
     ],
+    "editor.accessibilitySupport": "on",
 }
