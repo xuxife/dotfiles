@@ -4,12 +4,12 @@ SETUVAR --export AKS_BAZEL_REMOTE_CACHE_TOKEN:hg527wkyz7hrh3j4i6lnabjmgrlqfkxnw3
 SETUVAR --export AKS_GOPROXY_TOKEN:chr7nhd2ccuvnpcjmmgdu4fsiog7fnx3udtrhxjraepujlgfv2cq
 SETUVAR --export AZURE_CLIENT_ID:13bec9da\x2d7208\x2d4aa0\x2d8fc7\x2d47b25e26ff5d
 SETUVAR --export AZURE_CLIENT_SECRET:jN08Q\x7ePn\x2etiGgv2qmE2_xVxCb\x7eHXqsH99yECldxi
+SETUVAR --export BAT_THEME:Coldark\x2dDark
 SETUVAR --export EDITOR:nvim
-SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
-SETUVAR --export FZF_DISABLE_KEYBINDINGS:0
-SETUVAR --export FZF_LEGACY_KEYBINDINGS:1
-SETUVAR --export FZF_PREVIEW_DIR_CMD:exa
-SETUVAR --export FZF_PREVIEW_FILE_CMD:bat
+SETUVAR FZF_DISABLE_KEYBINDINGS:0
+SETUVAR FZF_LEGACY_KEYBINDINGS:1
+SETUVAR FZF_PREVIEW_DIR_CMD:ls
+SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
 SETUVAR --export FZF_TMUX_HEIGHT:40\x25
 SETUVAR --export GONOPROXY:none
 SETUVAR --export GOPRIVATE:goms\x2eio/aks/\x2a\x2cgo\x2egoms\x2eio/\x2a
@@ -85,4 +85,3 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:$HOME/\x2ekrew/bin\x1e$AKS_RP_ROOT/hack\x1e/opt/homebrew/bin\x1e$HOME/go/bin\x1e$HOME/\x2elocal/bin
