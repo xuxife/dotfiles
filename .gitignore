@@ -1,16 +1,6 @@
-git/*
-clash/*.mmdb
-clash/.cache
+clash
+raycast
 iterm2
-karabiner/assets/*
-karabiner/automatic_backups/*
-Nuget
-*bersicht*
-nvim
-Workflows
-Quicklook
+karabiner/automatic_backups
 
-Library/Application Support/LaunchBar/Actions/bb.lbaction
-
-Library/Application Support/Hazel/*
-!Library/Application Support/Hazel/license
+Library/Quicklook
