@@ -30,4 +30,4 @@ Temporary Items
 .apdisk
 
 # Go
-go.work
+go.work*
