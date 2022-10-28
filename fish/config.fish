@@ -22,9 +22,10 @@ if status is-interactive
         --color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7"
 end
 
+source ~/.profile
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/go/bin $PATH
 set -gx PATH ~/.krew/bin $PATH
-source ~/.profile
+set -gx PATH $AKS_RP_ROOT/hack $PATH
 
 starship init fish | source
