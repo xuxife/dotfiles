@@ -37,6 +37,7 @@ SETUVAR _fish_abbr_gp:git\x20pull
 SETUVAR _fish_abbr_gps:git\x20push
 SETUVAR _fish_abbr_grb:git\x20rebase
 SETUVAR _fish_abbr_grbc:git\x20rebase\x20\x2d\x2dcontinue
+SETUVAR _fish_abbr_grm:git\x20remote
 SETUVAR _fish_abbr_grs:git\x20restore
 SETUVAR _fish_abbr_grss:git\x20restore\x20\x2d\x2dstaged
 SETUVAR _fish_abbr_gso:git\x20show
