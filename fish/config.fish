@@ -25,6 +25,6 @@ end
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/go/bin $PATH
 set -gx PATH ~/.krew/bin $PATH
-source .profile
+source ~/.profile
 
 starship init fish | source
