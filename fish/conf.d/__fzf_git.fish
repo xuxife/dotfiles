@@ -1,3 +1,10 @@
+function __fzf_git_branch --argument-names branch
+  set -q branch[1]; or set branch ''
+  set -l result (git for-each-ref --format='%(refname:short)' refs/heads | fzf --height 10% --layout=reverse --border --query=$branch --select-1 --cycle)
+  commandline -t -- (string escape $result)
+  commandline -f repaint
+end
+
 function fco -d "Use `fzf` to choose which branch to check out" --argument-names branch
   set -q branch[1]; or set branch ''
   git for-each-ref --format='%(refname:short)' refs/heads | fzf --height 10% --layout=reverse --border --query=$branch --select-1 | xargs git checkout

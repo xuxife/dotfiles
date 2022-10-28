@@ -21,6 +21,7 @@ SETUVAR _fish_abbr_akbt:aksbuilder\x2esh\x20build\x20\x2d\x2dtags\x20\x22\x22\x2
 SETUVAR _fish_abbr_akd:aksbuilder\x2esh\x20build
 SETUVAR _fish_abbr_aks:aksbuilder\x2esh
 SETUVAR _fish_abbr_akt:aksbuilder\x2esh\x20tidy
+SETUVAR _fish_abbr_bw:brew
 SETUVAR _fish_abbr_bz:bazel
 SETUVAR _fish_abbr_c:cat
 SETUVAR _fish_abbr_d:cd
