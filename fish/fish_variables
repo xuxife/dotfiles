@@ -27,11 +27,12 @@ SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_gad:git\x20add
 SETUVAR _fish_abbr_gbr:git\x20branch
 SETUVAR _fish_abbr_gcm:git\x20commit
+SETUVAR _fish_abbr_gcmm:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gco:git\x20checkout
 SETUVAR _fish_abbr_gdf:git\x20diff
 SETUVAR _fish_abbr_gdfs:git\x20diff\x20\x2d\x2dstaged
 SETUVAR _fish_abbr_gfe:git\x20fetch
-SETUVAR _fish_abbr_gl:git\x20log
+SETUVAR _fish_abbr_gl:git\x20lg
 SETUVAR _fish_abbr_gmr:git\x20merge
 SETUVAR _fish_abbr_gp:git\x20pull
 SETUVAR _fish_abbr_gps:git\x20push
