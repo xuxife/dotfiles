@@ -3,11 +3,18 @@ if status is-interactive
 
     # bind for stashing command
     bind \cs __commandline_toggle
-    bind \cx\cc fzf-cd-widget
-    bind \cg\cb fzf-git-branch-widget
-    bind -M insert \cg\cb fzf-git-branch-widget
+    bind -M insert \cs __commandline_toggle
+
+    bind \cx __fzf_cd
+    bind -M insert \cx __fzf_cd
+    bind \cb __fzf_git_branch
+    bind -M insert \cb __fzf_git_branch
+    bind \cy __fzf_complete
+    bind -M insert \cy __fzf_complete
 
     set -gx FZF_DEFAULT_COMMAND "fd --strip-cwd-prefix"
+    set -gx FZF_FIND_FILE_COMMAND "fd -t f --strip-cwd-prefix"
+    set -gx FZF_CD_COMMAND "fd -t d --strip-cwd-prefix"
     set -gx FZF_DEFAULT_OPTS "--height ~40% --multi --reverse --ansi \
         --bind ctrl-n:preview-half-page-down,ctrl-p:preview-half-page-up \
         --color=dark \
