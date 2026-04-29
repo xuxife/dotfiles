@@ -20,12 +20,14 @@ if status is-interactive
         --color=dark \
         --color=fg:-1,bg:-1,hl:#5fff87,fg+:-1,bg+:-1,hl+:#ffaf5f \
         --color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7"
+
+    source /home/linuxbrew/.linuxbrew/share/autojump/autojump.fish
+
+    starship init fish | source
 end
 
-source ~/.profile
+source ~/.local.fish
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/go/bin $PATH
 set -gx PATH ~/.krew/bin $PATH
 set -gx PATH $AKS_RP_ROOT/hack $PATH
-
-starship init fish | source
