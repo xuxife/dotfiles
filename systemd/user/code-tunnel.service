@@ -1,0 +1,12 @@
+[Unit]
+Description=VS Code Tunnel
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/xingfeixu/.local/bin/code tunnel --accept-server-license-terms --name devbox
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

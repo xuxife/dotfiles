@@ -1,0 +1,18 @@
+[Unit]
+Description=LiteLLM Proxy for GitHub Copilot
+After=docker.service
+
+[Service]
+Restart=always
+ExecStartPre=-/usr/bin/docker stop litellm-copilot
+ExecStartPre=-/usr/bin/docker rm litellm-copilot
+ExecStart=/usr/bin/docker run --name litellm-copilot \
+  -p 4000:4000 \
+  -v %h/.config/litellm/config.yaml:/app/config.yaml:ro \
+  -v %h/.config/litellm:/root/.config/litellm \
+  ghcr.io/berriai/litellm:main-latest \
+  --config /app/config.yaml --port 4000
+ExecStop=/usr/bin/docker stop litellm-copilot
+
+[Install]
+WantedBy=default.target

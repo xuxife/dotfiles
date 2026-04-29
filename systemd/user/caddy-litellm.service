@@ -1,0 +1,11 @@
+[Unit]
+Description=Caddy HTTPS reverse proxy for litellm
+After=network.target
+
+[Service]
+ExecStart=/home/linuxbrew/.linuxbrew/bin/caddy run --config /home/xingfeixu/.config/caddy/Caddyfile
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
