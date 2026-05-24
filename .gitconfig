@@ -16,7 +16,10 @@
 [push]
 	autoSetupRemote = true
 [credential]
-	helper = 
 	helper = /home/linuxbrew/.linuxbrew/bin/git-credential-manager
 	credentialStore = cache
 	azreposCredentialType = oauth
+	msauthFlow = system
+	guiPrompt = false
+[credential "azrepos:org/msazure"]
+	username = xingfeixu@microsoft.com
