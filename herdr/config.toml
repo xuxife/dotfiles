@@ -9,6 +9,3 @@ show_agent_labels_on_pane_borders = true
 [theme]
 name = "terminal"
 
-[keys]
-next_tab = "shift+right"
-previous_tab = "shift+left"
