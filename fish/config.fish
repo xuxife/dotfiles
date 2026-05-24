@@ -26,7 +26,6 @@ if status is-interactive
     starship init fish | source
 end
 
-source ~/.local.fish
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/go/bin $PATH
 set -gx PATH ~/.krew/bin $PATH
