@@ -1,0 +1,13 @@
+[Unit]
+Description=code-server (web VS Code, bound to tailscale IP)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/linuxbrew/.linuxbrew/opt/code-server/bin/code-server /home/xingfeixu/repo
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
