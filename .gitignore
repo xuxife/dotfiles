@@ -1,3 +1,11 @@
+caddy
+github-copilot
+go/telemetry/local
+herdr/herdr-client.log
+herdr/herdr-server.log
+herdr/session.json
+litellm/github_copilot
+pulse
 clash
 raycast
 iterm2
