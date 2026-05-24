@@ -2,7 +2,6 @@
 # VERSION: 3.0
 SETUVAR --export ANTHROPIC_AUTH_TOKEN:sk\x2dlitellm\x2dstatic\x2dkey
 SETUVAR --export ANTHROPIC_BASE_URL:http\x3a//localhost\x3a4000
-SETUVAR --export BAT_THEME:Coldark\x2dDark
 SETUVAR --export CLAUDE_CODE_MODEL:claude\x2d3\x2d7\x2dsonnet\x2d20250219
 SETUVAR --export EDITOR:nvim
 SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25

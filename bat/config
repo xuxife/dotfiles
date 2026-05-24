@@ -1,0 +1,11 @@
+# bat configuration
+# https://github.com/sharkdp/bat#configuration-file
+
+# Color theme
+--theme="Monokai Extended Light"
+
+# Show line numbers + git modification markers in the gutter
+--style="numbers,changes"
+
+# Use less with side-by-side diff style when piping diffs (-R: colors, -F: skip pager if content fits one screen)
+--pager="less -RF"
