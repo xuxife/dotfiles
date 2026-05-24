@@ -2,7 +2,7 @@
 # https://github.com/sharkdp/bat#configuration-file
 
 # Color theme
---theme="Monokai Extended Light"
+--theme="Catppuccin Latte"
 
 # Show line numbers + git modification markers in the gutter
 --style="numbers,changes"
