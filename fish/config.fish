@@ -25,8 +25,3 @@ if status is-interactive
 
     starship init fish | source
 end
-
-set -gx PATH ~/.local/bin $PATH
-set -gx PATH ~/go/bin $PATH
-set -gx PATH ~/.krew/bin $PATH
-set -gx PATH $AKS_RP_ROOT/hack $PATH
