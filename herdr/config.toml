@@ -1,0 +1,16 @@
+onboarding = false
+
+[ui.toast]
+delivery = "terminal"
+
+[ui]
+show_agent_labels_on_pane_borders = true
+
+[theme]
+name = "gruvbox-light"
+
+[keys]
+next_tab = "shift+right"
+previous_tab = "shift+left"
+rename_tab = ","
+close_tab = "d"
