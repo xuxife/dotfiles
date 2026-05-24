@@ -1,0 +1,17 @@
+[user]
+	name = Xingfei Xu
+	email = xingfeixu@microsoft.com
+[credential "https://github.com"]
+	helper = 
+	helper = !gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !gh auth git-credential
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[core]
+	excludesFile = /home/xingfeixu/.gitignore
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[push]
+	autoSetupRemote = true
