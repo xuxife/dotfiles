@@ -11,6 +11,7 @@
 	useHttpPath = true
 [core]
 	excludesFile = /home/xingfeixu/.gitignore
+	compression = 0
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [push]
@@ -23,3 +24,7 @@
 	guiPrompt = false
 [credential "azrepos:org/msazure"]
 	username = xingfeixu@microsoft.com
+[http]
+	postBuffer = 524288000
+	lowSpeedLimit = 0
+	lowSpeedTime = 999999
