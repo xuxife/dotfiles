@@ -19,12 +19,10 @@ SETUVAR --export --path NETRC_PATH:/home/xingfeixu/\x2enetrc
 SETUVAR --export OPENAI_API_KEY:sk\x2dlitellm\x2dstatic\x2dkey
 SETUVAR --export OPENAI_BASE_URL:http\x3a//localhost\x3a4000
 SETUVAR __fish_initialized:4300
-SETUVAR _fish_abbr_akbt:aksbuilder\x2esh\x20build\x20\x2d\x2dtags\x20\x22\x22\x20\x2d\x2dtarget
-SETUVAR _fish_abbr_akd:aksbuilder\x2esh\x20build
-SETUVAR _fish_abbr_akr:aksbuilder\x2esh\x20run
-SETUVAR _fish_abbr_aks:aksbuilder\x2esh
-SETUVAR _fish_abbr_akt:aksbuilder\x2esh\x20tidy
-SETUVAR _fish_abbr_aktd:aksbuilder\x2esh\x20tidy
+SETUVAR _fish_abbr_akd:hack\x2faksbuilder\x2esh\x20build
+SETUVAR _fish_abbr_akr:hack\x2faksbuilder\x2esh\x20run
+SETUVAR _fish_abbr_aks:hack\x2faksbuilder\x2esh
+SETUVAR _fish_abbr_akt:hack\x2faksbuilder\x2esh\x20tidy
 SETUVAR _fish_abbr_bw:brew
 SETUVAR _fish_abbr_bz:bazel
 SETUVAR _fish_abbr_bzaq:bazel\x20aquery
@@ -37,6 +35,7 @@ SETUVAR _fish_abbr_bzq:bazel\x20query
 SETUVAR _fish_abbr_bzr:bazel\x20run
 SETUVAR _fish_abbr_bzt:bazel\x20test
 SETUVAR _fish_abbr_c:cat
+SETUVAR _fish_abbr_cc:claude
 SETUVAR _fish_abbr_ci:code
 SETUVAR _fish_abbr_cu:cursor
 SETUVAR _fish_abbr_d:cd
@@ -49,7 +48,8 @@ SETUVAR _fish_abbr_gcma:git\x20commit\x20\x2d\x2damend
 SETUVAR _fish_abbr_gcmm:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gco:git\x20checkout
 SETUVAR _fish_abbr_gcob:git\x20checkout\x20\x2db
-SETUVAR _fish_abbr_gcom:git\x20checkout\x20master
+SETUVAR _fish_abbr_gcom:git\x20checkout\x20main
+SETUVAR _fish_abbr_gcoms:git\x20checkout\x20master
 SETUVAR _fish_abbr_gdf:git\x20diff
 SETUVAR _fish_abbr_gdfs:git\x20diff\x20\x2d\x2dstaged
 SETUVAR _fish_abbr_gfe:git\x20fetch
@@ -72,16 +72,17 @@ SETUVAR _fish_abbr_gsh:git\x20stash
 SETUVAR _fish_abbr_gso:git\x20show
 SETUVAR _fish_abbr_gsp:git\x20stash\x20pop
 SETUVAR _fish_abbr_gwa:git\x20worktree\x20add
+SETUVAR _fish_abbr_gwa:git\x20worktree\x20add
 SETUVAR _fish_abbr_gwl:git\x20worktree\x20list
+SETUVAR _fish_abbr_gwl:git\x20worktree\x20list
+SETUVAR _fish_abbr_gwr:git\x20worktree\x20remove
 SETUVAR _fish_abbr_gwr:git\x20worktree\x20remove\x20\x2df
 SETUVAR _fish_abbr_k9c:k9s\x20\x2d\x2dcontext
 SETUVAR _fish_abbr_k9k:k9s\x20\x2d\x2dkubeconfig
 SETUVAR _fish_abbr_kc:kubectl
 SETUVAR _fish_abbr_kck:kubeconfig\x20\x2d\x2dkubeconfig
 SETUVAR _fish_abbr_kct:kubectl\x20\x2d\x2dcontext
-SETUVAR _fish_abbr_nv:nvim
-SETUVAR _fish_abbr_oa:ollama
-SETUVAR _fish_abbr_oar:ollama\x20run
+SETUVAR _fish_abbr_lg:lazygit
 SETUVAR _fisher_jethrokuan_2F_fzf_files:\x7e/\x2econfig/fish/functions/__fzf_cd\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_complete\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_complete_preview\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_find_file\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_get_dir\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_open\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_parse_commandline\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzf_reverse_isearch\x2efish\x1e\x7e/\x2econfig/fish/functions/__fzfcmd\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/fzf
