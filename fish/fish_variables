@@ -4,6 +4,7 @@ SETUVAR --export ANTHROPIC_AUTH_TOKEN:sk\x2dlitellm\x2dstatic\x2dkey
 SETUVAR --export ANTHROPIC_BASE_URL:http\x3a//localhost\x3a4000
 SETUVAR --export CLAUDE_CODE_MODEL:claude\x2d3\x2d7\x2dsonnet\x2d20250219
 SETUVAR --export EDITOR:nvim
+SETUVAR --export ENABLE_AKS_GOPROXY_AAD_TOKEN:true
 SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
 SETUVAR FZF_DISABLE_KEYBINDINGS:0
 SETUVAR FZF_LEGACY_KEYBINDINGS:1
@@ -19,10 +20,10 @@ SETUVAR --export --path NETRC_PATH:/home/xingfeixu/\x2enetrc
 SETUVAR --export OPENAI_API_KEY:sk\x2dlitellm\x2dstatic\x2dkey
 SETUVAR --export OPENAI_BASE_URL:http\x3a//localhost\x3a4000
 SETUVAR __fish_initialized:4300
-SETUVAR _fish_abbr_akd:hack\x2faksbuilder\x2esh\x20build
-SETUVAR _fish_abbr_akr:hack\x2faksbuilder\x2esh\x20run
-SETUVAR _fish_abbr_aks:hack\x2faksbuilder\x2esh
-SETUVAR _fish_abbr_akt:hack\x2faksbuilder\x2esh\x20tidy
+SETUVAR _fish_abbr_akd:hack/aksbuilder\x2esh\x20build
+SETUVAR _fish_abbr_akr:hack/aksbuilder\x2esh\x20run
+SETUVAR _fish_abbr_aks:hack/aksbuilder\x2esh
+SETUVAR _fish_abbr_akt:hack/aksbuilder\x2esh\x20tidy
 SETUVAR _fish_abbr_bw:brew
 SETUVAR _fish_abbr_bz:bazel
 SETUVAR _fish_abbr_bzaq:bazel\x20aquery
@@ -72,10 +73,7 @@ SETUVAR _fish_abbr_gsh:git\x20stash
 SETUVAR _fish_abbr_gso:git\x20show
 SETUVAR _fish_abbr_gsp:git\x20stash\x20pop
 SETUVAR _fish_abbr_gwa:git\x20worktree\x20add
-SETUVAR _fish_abbr_gwa:git\x20worktree\x20add
 SETUVAR _fish_abbr_gwl:git\x20worktree\x20list
-SETUVAR _fish_abbr_gwl:git\x20worktree\x20list
-SETUVAR _fish_abbr_gwr:git\x20worktree\x20remove
 SETUVAR _fish_abbr_gwr:git\x20worktree\x20remove\x20\x2df
 SETUVAR _fish_abbr_k9c:k9s\x20\x2d\x2dcontext
 SETUVAR _fish_abbr_k9k:k9s\x20\x2d\x2dkubeconfig
