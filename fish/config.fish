@@ -25,3 +25,7 @@ if status is-interactive
 
     starship init fish | source
 end
+
+# BEGIN Agency MANAGED BLOCK
+fish_add_path "~/.config/agency/CurrentVersion"
+# END Agency MANAGED BLOCK
