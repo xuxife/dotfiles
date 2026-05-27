@@ -1,4 +1,10 @@
 {
+  "env": {
+    "ANTHROPIC_BASE_URL": "http://localhost:4001",
+    "ANTHROPIC_AUTH_TOKEN": "dummy",
+    "ANTHROPIC_SMALL_FAST_MODEL": "claude-haiku-4.5"
+  },
+  "model": "claude-opus-4.7-1m-internal",
   "hooks": {
     "PermissionRequest": [
       {
@@ -134,7 +140,7 @@
     "github@claude-plugins-official": false,
     "gopls-lsp@claude-plugins-official": false,
     "microsoft-docs@claude-plugins-official": false,
-    "skill-creator@claude-plugins-official": false,
+    "skill-creator@claude-plugins-official": true,
     "superpowers@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
@@ -146,12 +152,6 @@
     }
   },
   "autoCompactWindow": 800000,
-  "model": "claude-opus-4.7-1m-internal",
-  "env": {
-    "ANTHROPIC_BASE_URL": "http://localhost:4001",
-    "ANTHROPIC_AUTH_TOKEN": "dummy",
-    "ANTHROPIC_SMALL_FAST_MODEL": "claude-haiku-4.5"
-  },
   "skipDangerousModePermissionPrompt": true,
   "theme": "light"
 }
