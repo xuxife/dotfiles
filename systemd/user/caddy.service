@@ -1,5 +1,5 @@
 [Unit]
-Description=Caddy HTTPS reverse proxy for litellm
+Description=Caddy HTTPS reverse proxy (litellm + copilot-api)
 After=network.target
 
 [Service]
