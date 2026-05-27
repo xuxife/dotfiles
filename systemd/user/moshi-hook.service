@@ -1,0 +1,18 @@
+[Unit]
+Description=Moshi hook daemon
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Force socket to /tmp/moshi-hook.sock so non-systemd shells (agent hooks, SSH)
+# can find it. The daemon picks $XDG_RUNTIME_DIR/moshi-hook.sock when set.
+Environment=XDG_RUNTIME_DIR=
+ExecStart=/home/linuxbrew/.linuxbrew/opt/moshi-hook/bin/moshi-hook serve
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:%h/.local/state/moshi/serve.out
+StandardError=append:%h/.local/state/moshi/serve.out
+
+[Install]
+WantedBy=default.target
