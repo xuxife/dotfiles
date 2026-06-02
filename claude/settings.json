@@ -16,16 +16,6 @@
             "timeout": 10
           }
         ]
-      },
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "'/home/linuxbrew/.linuxbrew/Cellar/moshi-hook/0.2.4/bin/moshi-hook' claude-hook",
-            "timeout": 300,
-            "async": false
-          }
-        ]
       }
     ],
     "PreToolUse": [
@@ -52,17 +42,6 @@
         ]
       }
     ],
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "'/home/linuxbrew/.linuxbrew/Cellar/moshi-hook/0.2.4/bin/moshi-hook' claude-hook",
-            "async": true
-          }
-        ]
-      }
-    ],
     "Stop": [
       {
         "matcher": "*",
@@ -71,15 +50,6 @@
             "type": "command",
             "command": "bash '/home/xingfeixu/.claude/hooks/herdr-agent-state.sh' idle",
             "timeout": 10
-          }
-        ]
-      },
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "'/home/linuxbrew/.linuxbrew/Cellar/moshi-hook/0.2.4/bin/moshi-hook' claude-hook",
-            "async": true
           }
         ]
       }
@@ -94,16 +64,7 @@
             "timeout": 10
           }
         ]
-      },
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "'/home/linuxbrew/.linuxbrew/Cellar/moshi-hook/0.2.4/bin/moshi-hook' claude-hook",
-            "async": true
-          }
-        ]
-      },
+      }
       {
         "hooks": [
           {
