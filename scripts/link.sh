@@ -19,6 +19,7 @@ LINKS=(
   "claude/CLAUDE.md:$HOME/.claude/CLAUDE.md"
   "claude/settings.json:$HOME/.claude/settings.json"
   "claude/hooks:$HOME/.claude/hooks"
+  "claude/skills:$HOME/.claude/skills"
 )
 
 link_one() {
@@ -37,7 +38,7 @@ link_one() {
     return
   fi
 
-  if (( DRY_RUN )); then
+  if ((DRY_RUN)); then
     echo "would link: $dst -> $src"
   else
     ln -sfn "$src" "$dst"
