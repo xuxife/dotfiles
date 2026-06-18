@@ -1,0 +1,16 @@
+[Unit]
+Description=gnome-keyring secret service with auto-unlock (empty login keyring password)
+Documentation=https://wiki.gnome.org/Projects/GnomeKeyring
+# Headless box: no graphical-session target, so wire to default.target instead.
+
+[Service]
+Type=simple
+# Feed a single newline (base64 "Cg==") to --unlock = empty login keyring password.
+StandardInput=data
+StandardInputData=Cg==
+ExecStart=/usr/bin/gnome-keyring-daemon --replace --foreground --unlock --components=secrets,pkcs11
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
