@@ -2,7 +2,9 @@
 # VERSION: 3.0
 SETUVAR --export ANTHROPIC_AUTH_TOKEN:sk\x2dlitellm\x2dstatic\x2dkey
 SETUVAR --export ANTHROPIC_BASE_URL:http\x3a//localhost\x3a4000
+SETUVAR --export BROWSER:/home/xingfeixu/\x2elocal/bin/xdg\x2dopen
 SETUVAR --export CLAUDE_CODE_MODEL:claude\x2d3\x2d7\x2dsonnet\x2d20250219
+SETUVAR --export DISPLAY:\x3a0
 SETUVAR --export EDITOR:nvim
 SETUVAR --export ENABLE_AKS_GOPROXY_AAD_TOKEN:true
 SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
