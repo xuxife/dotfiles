@@ -29,3 +29,15 @@ end
 # BEGIN Agency MANAGED BLOCK
 fish_add_path "~/.config/agency/CurrentVersion"
 # END Agency MANAGED BLOCK
+
+# BEGIN ssh-agent MANAGED BLOCK
+if status is-interactive
+    set -l __ssh_env "$HOME/.ssh/agent-env.fish"
+    test -f $__ssh_env; and source $__ssh_env >/dev/null 2>&1
+    ssh-add -l >/dev/null 2>&1
+    if test $status -eq 2
+        ssh-agent -c >$__ssh_env 2>/dev/null
+        source $__ssh_env >/dev/null 2>&1
+    end
+end
+# END ssh-agent MANAGED BLOCK
