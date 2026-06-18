@@ -77,16 +77,26 @@ phase_sshkeys() {
 }
 
 # =============================================================================
-# Phase: apt — minimal prerequisites for Homebrew on Linux only
-# (https://docs.brew.sh/Homebrew-on-Linux#requirements)
+# Phase: prereqs — minimal prerequisites for Homebrew on Linux
+# apt (Debian/Ubuntu) or tdnf (Azure Linux). See:
+# https://docs.brew.sh/Homebrew-on-Linux#requirements
 # =============================================================================
-phase_apt() {
-  command -v apt-get >/dev/null 2>&1 || { ok "apt not present (non-Debian distro) — skipping"; return 0; }
-  local pkgs=(build-essential procps curl file git)
-  log "apt: installing Homebrew prerequisites: ${pkgs[*]}"
-  sudo apt-get update -y
-  sudo DEBIAN_FRONTEND=noninteractive apt-get install -y "${pkgs[@]}"
-  ok "apt prerequisites installed"
+phase_prereqs() {
+  if command -v apt-get >/dev/null 2>&1; then
+    local pkgs=(build-essential procps curl file git)
+    log "apt: installing Homebrew prerequisites: ${pkgs[*]}"
+    sudo apt-get update -y
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install -y "${pkgs[@]}"
+    ok "apt prerequisites installed"
+  elif command -v tdnf >/dev/null 2>&1; then
+    # Azure Linux: no 'build-essential' meta — install the toolchain explicitly.
+    local pkgs=(gcc gcc-c++ make glibc-devel binutils procps-ng curl file git tar gzip which)
+    log "tdnf: installing Homebrew prerequisites: ${pkgs[*]}"
+    sudo tdnf install -y "${pkgs[@]}"
+    ok "tdnf prerequisites installed"
+  else
+    warn "no apt/tdnf found — install Homebrew prerequisites manually"
+  fi
 }
 
 # =============================================================================
@@ -196,10 +206,8 @@ phase_dotfiles() {
   fi
 
   # --no-folding keeps ~/.config a real dir (so machine-local files can coexist).
-  # --ignore skips committed absolute symlinks (eza theme, systemd .wants) that
-  # are machine-specific and would otherwise abort stow.
   log "dotfiles: stowing 'home' package into $HOME"
-  local stow_args=(--no-folding --ignore='theme\.yml' --ignore='default\.target\.wants' -d "$DOTFILES_DIR" -t "$HOME")
+  local stow_args=(--no-folding -d "$DOTFILES_DIR" -t "$HOME")
   # --restow is idempotent on subsequent runs; only back up real conflicts on first run.
   if ! "$BREW_PREFIX/bin/stow" "${stow_args[@]}" --restow home 2>/dev/null; then
     local backup="$HOME/.pre-stow-backup-$(date +%Y%m%d_%H%M%S)" moved=0
@@ -252,7 +260,7 @@ main() {
   log "devbox setup starting (user=$USER host=$(hostname -s))"
   phase_tailscale
   phase_sshkeys
-  phase_apt
+  phase_prereqs
   phase_brew
   phase_dotfiles
   phase_shell
