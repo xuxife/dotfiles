@@ -19,7 +19,6 @@ LINKS=(
   "claude/CLAUDE.md:$HOME/.claude/CLAUDE.md"
   "claude/settings.json:$HOME/.claude/settings.json"
   "claude/hooks:$HOME/.claude/hooks"
-  "claude/skills:$HOME/.claude/skills"
 )
 
 link_one() {
