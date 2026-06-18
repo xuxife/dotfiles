@@ -14,6 +14,8 @@ set -euo pipefail
 # --- config (override via env) ------------------------------------------------
 TS_HOSTNAME="${TS_HOSTNAME:-$(hostname -s)}"   # tailnet machine name
 GH_USER="${GH_USER:-xuxife}"                   # GitHub user whose public keys to trust
+DOTFILES_REPO="${DOTFILES_REPO:-https://github.com/xuxife/dotfiles.git}"
+DOTFILES_DIR="${DOTFILES_DIR:-$HOME/.dotfiles}"
 BREW_PREFIX="/home/linuxbrew/.linuxbrew"
 BREW_BIN="$BREW_PREFIX/bin/brew"
 
@@ -182,6 +184,68 @@ BREWFILE
 }
 
 # =============================================================================
+# Phase: dotfiles — clone repo and link with GNU stow
+# =============================================================================
+phase_dotfiles() {
+  if [ -d "$DOTFILES_DIR/.git" ]; then
+    log "dotfiles: updating $DOTFILES_DIR"
+    git -C "$DOTFILES_DIR" pull --quiet --recurse-submodules || warn "git pull failed (continuing)"
+  else
+    log "dotfiles: cloning $DOTFILES_REPO -> $DOTFILES_DIR"
+    git clone --quiet --recurse-submodules "$DOTFILES_REPO" "$DOTFILES_DIR"
+  fi
+
+  # Back up any real (non-symlink) $HOME entries that stow would overwrite.
+  local backup="$HOME/.pre-stow-backup-$(date +%Y%m%d_%H%M%S)" moved=0
+  for e in .config .claude .gitconfig .tmux.conf .pandoc .hammerspoon .mackup.cfg Library; do
+    if [ -e "$HOME/$e" ] && [ ! -L "$HOME/$e" ]; then
+      mkdir -p "$backup"; mv "$HOME/$e" "$backup/"; moved=$((moved + 1))
+    fi
+  done
+  [ "$moved" -gt 0 ] && ok "dotfiles: backed up $moved existing entr(y/ies) to $backup"
+
+  # --no-folding keeps ~/.config a real dir (so machine-local files can coexist).
+  # --ignore skips committed absolute symlinks (eza theme, systemd .wants) that
+  # are machine-specific and would otherwise abort stow.
+  log "dotfiles: stowing 'home' package into $HOME"
+  "$BREW_PREFIX/bin/stow" --no-folding \
+    --ignore='theme\.yml' --ignore='default\.target\.wants' \
+    -d "$DOTFILES_DIR" -t "$HOME" home
+  ok "dotfiles: stow complete"
+
+  # Machine-local: ensure fish picks up Linux Homebrew (repo fish config does not).
+  local drop="$HOME/.config/fish/conf.d/zz-linuxbrew.fish"
+  mkdir -p "$(dirname "$drop")"
+  if [ ! -e "$drop" ] || [ -L "$drop" ]; then
+    printf '# machine-local: put Homebrew on PATH (not tracked in dotfiles)\n%s shellenv fish | source\n' "$BREW_BIN" > "$drop"
+    ok "dotfiles: wrote machine-local $drop"
+  fi
+}
+
+# =============================================================================
+# Phase: shell — make fish the default login shell
+# =============================================================================
+phase_shell() {
+  local fish_bin="$BREW_PREFIX/bin/fish"
+  [ -x "$fish_bin" ] || { warn "fish not found at $fish_bin — skipping"; return 0; }
+
+  local current
+  current="$(getent passwd "$USER" | cut -d: -f7)"
+  if [ "$current" = "$fish_bin" ]; then
+    ok "shell: fish already the default login shell"
+    return 0
+  fi
+
+  if ! grep -qxF "$fish_bin" /etc/shells 2>/dev/null; then
+    log "shell: registering $fish_bin in /etc/shells"
+    echo "$fish_bin" | sudo tee -a /etc/shells >/dev/null
+  fi
+  log "shell: setting default shell to fish"
+  sudo chsh -s "$fish_bin" "$USER"
+  ok "shell: default shell set to fish (log out/in to take effect)"
+}
+
+# =============================================================================
 # main
 # =============================================================================
 main() {
@@ -190,6 +254,8 @@ main() {
   phase_sshkeys
   phase_apt
   phase_brew
+  phase_dotfiles
+  phase_shell
   ok "devbox setup complete"
 }
 
