@@ -1,17 +1,19 @@
-agency
-EcsCacheAGENCY
-caddy
-github-copilot
-go/telemetry/local
-herdr/herdr-client.log
-herdr/herdr-server.log
-herdr/session.json
-litellm/github_copilot
-pulse
-clash
-raycast
-iterm2
-karabiner/automatic_backups
+# XDG state/cache under home/.config that should not be tracked
+home/.config/agency
+home/.config/EcsCacheAGENCY
+home/.config/caddy
+home/.config/github-copilot
+home/.config/go/telemetry/local
+home/.config/herdr/herdr-client.log
+home/.config/herdr/herdr-server.log
+home/.config/herdr/session.json
+home/.config/litellm/github_copilot
+home/.config/pulse
+home/.config/clash
+home/.config/raycast
+home/.config/iterm2
+home/.config/karabiner/automatic_backups
+home/.config/gh/hosts.yml
 
-Library/Quicklook
-gh/hosts.yml
+# $HOME-level
+home/Library/Quicklook
