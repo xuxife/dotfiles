@@ -1,0 +1,726 @@
+{
+  "locations": {
+    "/home/xingfeixu": {
+      "tool_approvals": [
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "npm install"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "squad"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git add"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git commit"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git push"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "mkdir"
+          ]
+        },
+        {
+          "kind": "write"
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "rm"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "xargs"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "az"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "pip show"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "pip3"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "python3"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "sed",
+            "column"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "ssh"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "copilot"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "gh copilot"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "sqlite3"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "env"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "pgrep",
+            "strings"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "herdr"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "agency"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "chmod",
+            "timeout"
+          ]
+        }
+      ]
+    },
+    "/home/xingfeixu/repo/ostc-sfi": {
+      "tool_approvals": [
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "test"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "sed"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "python3"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "mkdir"
+          ]
+        },
+        {
+          "kind": "write"
+        },
+        {
+          "kind": "mcp",
+          "serverName": "ado",
+          "toolName": "search_wiki"
+        },
+        {
+          "kind": "mcp",
+          "serverName": "ado",
+          "toolName": "wiki_get_page_content"
+        },
+        {
+          "kind": "mcp",
+          "serverName": "ado",
+          "toolName": "wiki_create_or_update_page"
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "timeout"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "az"
+          ]
+        },
+        {
+          "kind": "mcp",
+          "serverName": "azure-mcp-server",
+          "toolName": "kusto"
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "awk"
+          ]
+        }
+      ]
+    },
+    "/home/xingfeixu/repo/aks-devinfra": {
+      "tool_approvals": [
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git log"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "az"
+          ]
+        },
+        {
+          "kind": "write"
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "go test"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "go env"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "gofmt"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "go build"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "timeout"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "sed"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git add",
+            "git commit"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "test"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git show",
+            "printf"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "go vet"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "npx openspec"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "./hack/aksbuilder.sh"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git -C"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "xargs"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "mkdir"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git fetch"
+          ]
+        },
+        {
+          "kind": "mcp",
+          "serverName": "azure-mcp-server",
+          "toolName": "kusto"
+        },
+        {
+          "kind": "mcp-sampling",
+          "serverName": "azure-mcp-server"
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "python3"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git reset"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git symbolic-ref"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git -c"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git push"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git worktree"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "gh label"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "openspec"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "awk"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git rm"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "pgrep"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "gh pr"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "find"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "npx --yes"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git restore"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "chmod",
+            ":"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "kusto"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "/tmp/kq.sh"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git mv"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "fish"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "bash"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "sleep"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "curl"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "~/.copilot/session-state/98ab3955-8434-41f1-9490-20de653a6a27/files/kquery.sh"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "kustomize"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "pip show"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git stash"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git rebase"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "rm"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git ls-tree"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "jq"
+          ]
+        }
+      ]
+    },
+    "/home/xingfeixu/repo/aks-rp": {
+      "tool_approvals": [
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git config"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "chmod"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "rm"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "az"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "command"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "pip list"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "pip install"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "pip3"
+          ]
+        },
+        {
+          "kind": "write"
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "python3"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "go test"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git add",
+            "git commit",
+            "git push"
+          ]
+        },
+        {
+          "kind": "mcp",
+          "serverName": "bluebird",
+          "toolName": "get_file_content"
+        },
+        {
+          "kind": "mcp",
+          "serverName": "bluebird",
+          "toolName": "search_file_paths"
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git fetch",
+            "git log"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "xargs"
+          ]
+        },
+        {
+          "kind": "mcp",
+          "serverName": "bluebird",
+          "toolName": "search_wiki"
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "pip show"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "awk"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "agency"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "kusto"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "gh api"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "/tmp/icmcall.sh"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "bash"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "gofmt"
+          ]
+        }
+      ]
+    },
+    "/home/xingfeixu/repo/aks-e2e-infra": {
+      "tool_approvals": [
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git push"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git fetch",
+            "git merge"
+          ]
+        },
+        {
+          "kind": "write"
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git add",
+            "git commit"
+          ]
+        }
+      ]
+    },
+    "/home/xingfeixu/repo": {
+      "tool_approvals": [
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "git clone"
+          ]
+        }
+      ]
+    },
+    "/home/xingfeixu/.config": {
+      "tool_approvals": [
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "python3"
+          ]
+        }
+      ]
+    }
+  }
+}

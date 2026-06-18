@@ -1,0 +1,17 @@
+# ~/.copilot machine-specific / secret files — NEVER sync via dotfiles.
+# config.json contains a plaintext GitHub OAuth token (gho_...) and is auto-managed.
+config.json
+command-history-state.json
+session-state/
+session-store.db
+session-store.db-shm
+session-store.db-wal
+restart/
+installed-plugins/
+plugin-data/
+ide/
+*.bak
+*.bak2
+*.disabled-*
+mcp-config.json
+mcp-config.json.*

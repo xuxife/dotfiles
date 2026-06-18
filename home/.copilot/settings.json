@@ -1,0 +1,27 @@
+{
+  "colorMode": "default",
+  "contextTier": "long_context",
+  "enabledPlugins": {
+    "superpowers@superpowers-marketplace": true
+  },
+  "extraKnownMarketplaces": {
+    "superpowers-marketplace": {
+      "source": {
+        "repo": "obra/superpowers-marketplace",
+        "source": "github"
+      }
+    }
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "bash": "bash '/home/xingfeixu/.copilot/hooks/herdr-agent-state.sh'",
+        "timeoutSec": 10,
+        "type": "command"
+      }
+    ]
+  },
+  "logLevel": "all",
+  "model": "claude-opus-4.8",
+  "theme": "light"
+}
