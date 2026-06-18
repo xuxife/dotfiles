@@ -195,22 +195,22 @@ phase_dotfiles() {
     git clone --quiet --recurse-submodules "$DOTFILES_REPO" "$DOTFILES_DIR"
   fi
 
-  # Back up any real (non-symlink) $HOME entries that stow would overwrite.
-  local backup="$HOME/.pre-stow-backup-$(date +%Y%m%d_%H%M%S)" moved=0
-  for e in .config .claude .gitconfig .tmux.conf .pandoc .hammerspoon .mackup.cfg Library; do
-    if [ -e "$HOME/$e" ] && [ ! -L "$HOME/$e" ]; then
-      mkdir -p "$backup"; mv "$HOME/$e" "$backup/"; moved=$((moved + 1))
-    fi
-  done
-  [ "$moved" -gt 0 ] && ok "dotfiles: backed up $moved existing entr(y/ies) to $backup"
-
   # --no-folding keeps ~/.config a real dir (so machine-local files can coexist).
   # --ignore skips committed absolute symlinks (eza theme, systemd .wants) that
   # are machine-specific and would otherwise abort stow.
   log "dotfiles: stowing 'home' package into $HOME"
-  "$BREW_PREFIX/bin/stow" --no-folding \
-    --ignore='theme\.yml' --ignore='default\.target\.wants' \
-    -d "$DOTFILES_DIR" -t "$HOME" home
+  local stow_args=(--no-folding --ignore='theme\.yml' --ignore='default\.target\.wants' -d "$DOTFILES_DIR" -t "$HOME")
+  # --restow is idempotent on subsequent runs; only back up real conflicts on first run.
+  if ! "$BREW_PREFIX/bin/stow" "${stow_args[@]}" --restow home 2>/dev/null; then
+    local backup="$HOME/.pre-stow-backup-$(date +%Y%m%d_%H%M%S)" moved=0
+    for e in .config .claude .gitconfig .tmux.conf .pandoc .hammerspoon .mackup.cfg Library; do
+      if [ -e "$HOME/$e" ] && [ ! -L "$HOME/$e" ]; then
+        mkdir -p "$backup"; mv "$HOME/$e" "$backup/"; moved=$((moved + 1))
+      fi
+    done
+    [ "$moved" -gt 0 ] && ok "dotfiles: backed up $moved conflicting entr(y/ies) to $backup"
+    "$BREW_PREFIX/bin/stow" "${stow_args[@]}" home
+  fi
   ok "dotfiles: stow complete"
 
   # Machine-local: ensure fish picks up Linux Homebrew (repo fish config does not).
