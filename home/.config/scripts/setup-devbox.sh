@@ -181,6 +181,7 @@ brew "goimports"
 
 # AI / coding
 brew "opencode"
+brew "herdr"
 
 # Misc
 brew "prettier"
@@ -254,6 +255,47 @@ phase_shell() {
 }
 
 # =============================================================================
+# Phase: tools — extra installers not in Homebrew
+# =============================================================================
+phase_tools() {
+  # agency — internal Microsoft Copilot tool (installs to ~/.config/agency)
+  if [ -d "$HOME/.config/agency" ] || command -v agency >/dev/null 2>&1; then
+    ok "tools: agency already installed"
+  else
+    log "tools: installing agency"
+    curl -sSfL https://aka.ms/InstallTool.sh | sh -s agency || warn "agency install failed (continuing)"
+  fi
+}
+
+# =============================================================================
+# Phase: code-server — run as a user service, expose over the tailnet (HTTPS)
+# =============================================================================
+phase_code_server() {
+  local bin="$BREW_PREFIX/opt/code-server/bin/code-server"
+  local unit="$HOME/.config/systemd/user/code-server.service"
+  [ -x "$bin" ]  || { warn "code-server: binary missing (brew) — skipping"; return 0; }
+  [ -f "$unit" ] || { warn "code-server: $unit missing (dotfiles) — skipping"; return 0; }
+  if ! command -v tailscale >/dev/null 2>&1 || ! tailscale status >/dev/null 2>&1; then
+    warn "code-server: tailscale not up — skipping serve"; return 0
+  fi
+
+  # Keep the user service running without an active login session.
+  loginctl show-user "$USER" 2>/dev/null | grep -q '^Linger=yes' || sudo loginctl enable-linger "$USER"
+  export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+  mkdir -p "$HOME/repo"
+
+  log "code-server: enabling + starting user service"
+  systemctl --user daemon-reload
+  systemctl --user enable --now code-server.service
+
+  # Publish 127.0.0.1:4321 as tailnet-only HTTPS on 443 (idempotent).
+  log "code-server: publishing via Tailscale Serve (HTTPS 443)"
+  sudo tailscale serve --bg --https=443 http://127.0.0.1:4321
+  local host; host="$(tailscale status --json 2>/dev/null | jq -r '.Self.DNSName // empty' 2>/dev/null | sed 's/\.$//')"
+  ok "code-server: reachable at https://${host:-<host>.<tailnet>.ts.net}/"
+}
+
+# =============================================================================
 # main
 # =============================================================================
 main() {
@@ -263,6 +305,8 @@ main() {
   phase_prereqs
   phase_brew
   phase_dotfiles
+  phase_tools
+  phase_code_server
   phase_shell
   ok "devbox setup complete"
 }
