@@ -12,7 +12,8 @@
 set -euo pipefail
 
 # --- config (override via env) ------------------------------------------------
-TS_HOSTNAME="${TS_HOSTNAME:-$(hostname -s)}"   # tailnet machine name
+DEVBOX_NAME="${DEVBOX_NAME:-}"                  # desired system hostname (also tailnet name); empty = leave as-is
+TS_HOSTNAME="${TS_HOSTNAME:-${DEVBOX_NAME:-$(hostname -s)}}"   # tailnet machine name
 GH_USER="${GH_USER:-xuxife}"                   # GitHub user whose public keys to trust
 DOTFILES_REPO="${DOTFILES_REPO:-https://github.com/xuxife/dotfiles.git}"
 DOTFILES_DIR="${DOTFILES_DIR:-$HOME/.dotfiles}"
@@ -23,6 +24,20 @@ BREW_BIN="$BREW_PREFIX/bin/brew"
 log()  { printf '\033[1;34m==>\033[0m %s\n' "$*"; }
 ok()   { printf '\033[1;32m✓\033[0m %s\n' "$*"; }
 warn() { printf '\033[1;33m!\033[0m %s\n' "$*" >&2; }
+
+# =============================================================================
+# Phase: hostname — set the system hostname (and prompt name) to DEVBOX_NAME
+# =============================================================================
+phase_hostname() {
+  [ -n "$DEVBOX_NAME" ] || { ok "hostname: DEVBOX_NAME not set — keeping $(hostname -s)"; return 0; }
+  if [ "$(hostname -s)" = "$DEVBOX_NAME" ]; then
+    ok "hostname: already '$DEVBOX_NAME'"
+    return 0
+  fi
+  log "hostname: setting system hostname to '$DEVBOX_NAME'"
+  sudo hostnamectl set-hostname "$DEVBOX_NAME"
+  ok "hostname: set to '$DEVBOX_NAME' (reconnect to refresh prompt)"
+}
 
 # =============================================================================
 # Phase: Tailscale
@@ -300,6 +315,7 @@ phase_code_server() {
 # =============================================================================
 main() {
   log "devbox setup starting (user=$USER host=$(hostname -s))"
+  phase_hostname
   phase_tailscale
   phase_sshkeys
   phase_prereqs
