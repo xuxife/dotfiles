@@ -18,7 +18,7 @@ brew "glow"
 
 # Git & dev
 brew "gh"
-brew "git-credential-manager"
+cask "git-credential-manager" # Git Credential Manager is a cask, not a formula
 brew "git-extras"
 brew "git-filter-repo"
 brew "lazygit"
