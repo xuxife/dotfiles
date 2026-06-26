@@ -42,3 +42,6 @@ if status is-interactive
     end
 end
 # END ssh-agent MANAGED BLOCK
+
+# Homebrew
+/home/linuxbrew/.linuxbrew/bin/brew shellenv fish | source

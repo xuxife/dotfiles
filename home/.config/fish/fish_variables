@@ -128,4 +128,4 @@ SETUVAR fish_pager_color_selected_background:\x2dr\x1e\x2d\x2dtheme\x3ddefault
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/xingfeixu/\x2elocal/bin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/xingfeixu/\x2econfig/agency/CurrentVersion\x1e/home/xingfeixu/\x2enpm\x2dglobal/bin
+SETUVAR fish_user_paths:/home/xingfeixu/\x2ecdp/cdecli\x1e/home/xingfeixu/\x2elocal/bin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/xingfeixu/\x2econfig/agency/CurrentVersion\x1e/home/xingfeixu/\x2enpm\x2dglobal/bin
