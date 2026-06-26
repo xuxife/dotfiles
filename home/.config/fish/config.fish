@@ -28,7 +28,7 @@ if status is-interactive
 end
 
 # BEGIN Agency MANAGED BLOCK
-fish_add_path "~/.config/agency/CurrentVersion"
+fish_add_path "/Users/xuxife/.config/agency/CurrentVersion"
 # END Agency MANAGED BLOCK
 
 # BEGIN ssh-agent MANAGED BLOCK
@@ -44,4 +44,6 @@ end
 # END ssh-agent MANAGED BLOCK
 
 # Homebrew
-/home/linuxbrew/.linuxbrew/bin/brew shellenv fish | source
+if command -q brew
+    brew shellenv fish | source
+end
