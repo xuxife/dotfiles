@@ -12,7 +12,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash '/home/xingfeixu/.claude/hooks/herdr-agent-state.sh' blocked",
+            "command": "bash $HOME/.claude/hooks/herdr-agent-state.sh blocked",
             "timeout": 10
           }
         ]
@@ -24,7 +24,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash '/home/xingfeixu/.claude/hooks/herdr-agent-state.sh' working",
+            "command": "bash $HOME/.claude/hooks/herdr-agent-state.sh working",
             "timeout": 10
           }
         ]
@@ -36,7 +36,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash '/home/xingfeixu/.claude/hooks/herdr-agent-state.sh' release",
+            "command": "bash $HOME/.claude/hooks/herdr-agent-state.sh release",
             "timeout": 10
           }
         ]
@@ -48,7 +48,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash '/home/xingfeixu/.claude/hooks/herdr-agent-state.sh' idle",
+            "command": "bash $HOME/.claude/hooks/herdr-agent-state.sh idle",
             "timeout": 10
           }
         ]
@@ -60,7 +60,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash '/home/xingfeixu/.claude/hooks/herdr-agent-state.sh' working",
+            "command": "bash $HOME/.claude/hooks/herdr-agent-state.sh working",
             "timeout": 10
           }
         ]
@@ -69,7 +69,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash '/home/xingfeixu/.claude/hooks/strip-kql-base64.sh'",
+            "command": "bash $HOME/.claude/hooks/strip-kql-base64.sh",
             "timeout": 5
           }
         ]
@@ -81,7 +81,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash '/home/xingfeixu/.claude/hooks/big-tool-result-warn.sh'",
+            "command": "bash $HOME/.claude/hooks/big-tool-result-warn.sh",
             "timeout": 10
           }
         ]
