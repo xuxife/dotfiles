@@ -1,97 +1,5 @@
 {
-  "env": {
-    "ANTHROPIC_BASE_URL": "http://localhost:4001",
-    "ANTHROPIC_AUTH_TOKEN": "dummy",
-    "ANTHROPIC_SMALL_FAST_MODEL": "claude-haiku-4.5"
-  },
-  "model": "claude-opus-4.7-1m-internal",
-  "hooks": {
-    "PermissionRequest": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash $HOME/.claude/hooks/herdr-agent-state.sh blocked",
-            "timeout": 10
-          }
-        ]
-      }
-    ],
-    "PreToolUse": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash $HOME/.claude/hooks/herdr-agent-state.sh working",
-            "timeout": 10
-          }
-        ]
-      }
-    ],
-    "SessionEnd": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash $HOME/.claude/hooks/herdr-agent-state.sh release",
-            "timeout": 10
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash $HOME/.claude/hooks/herdr-agent-state.sh idle",
-            "timeout": 10
-          }
-        ]
-      }
-    ],
-    "UserPromptSubmit": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash $HOME/.claude/hooks/herdr-agent-state.sh working",
-            "timeout": 10
-          }
-        ]
-      },
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash $HOME/.claude/hooks/strip-kql-base64.sh",
-            "timeout": 5
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash $HOME/.claude/hooks/big-tool-result-warn.sh",
-            "timeout": 10
-          }
-        ]
-      }
-    ]
-  },
-  "statusLine": {
-    "type": "command",
-    "command": "bash -c '\n  INPUT=$(cat)\n  CWD=$(printf \"%s\" \"$INPUT\" | python3 -c \"import sys,json; d=json.load(sys.stdin); print(d.get(\\\"workspace\\\",{}).get(\\\"current_dir\\\") or d.get(\\\"cwd\\\",\\\"\\\"))\" 2>/dev/null)\n  [ -z \"$CWD\" ] && CWD=$(pwd)\n  ABS=$(realpath \"$CWD\" 2>/dev/null || echo \"$CWD$CTX\")\n  REPO_ROOT=$(realpath \"$HOME/repo\" 2>/dev/null || echo \"$HOME/repo$CTX\")\n\n  BRANCH=$(git -C \"$CWD\" rev-parse --abbrev-ref HEAD 2>/dev/null)\n\n  CTX=$(printf \"%s\" \"$INPUT\" | bash \"$HOME/.claude/statusline-context.sh\" 2>/dev/null)\n\n  # Strip ~/repo/ prefix\n  case \"$ABS\" in\n    \"$REPO_ROOT\"/*)\n      REL=\"${ABS#$REPO_ROOT/}\"\n      ;;\n    *)\n      if [ -n \"$BRANCH\" ]; then\n        echo \" $(basename $CTX\"$ABS\")   $BRANCH\"\n      else\n        echo \" $(basename $CTX\"$ABS\")\"\n      fi\n      exit 0\n      ;;\n  esac\n\n  # REL examples:\n  #   aks-devinfra\n  #   aks-devinfra/.worktrees/feat-x\n  #   aks-devinfra/.worktrees/feat-x/aks-rp\n  PRIMARY=\"${REL%%/*}\"\n  REST=\"${REL#$PRIMARY}\"\n  REST=\"${REST#/}\"\n\n  WORKTREE=\"\"\n  SUBREPO=\"\"\n  case \"$REST\" in\n    .worktrees/*)\n      AFTER=\"${REST#.worktrees/}\"\n      WORKTREE=\"${AFTER%%/*}\"\n      SUBREPO=\"${AFTER#$WORKTREE}\"\n      SUBREPO=\"${SUBREPO#/}\"\n      ;;\n  esac\n\n  REPO=\"$PRIMARY\"\n  if [ -n \"$SUBREPO\" ]; then\n    # Show only first segment of subrepo path\n    REPO=\"$PRIMARY/${SUBREPO%%/*}\"\n  fi\n\n  [ -z \"$BRANCH\" ] && BRANCH=\"-\"\n\n  if [ -n \"$WORKTREE\" ]; then\n    echo \" $REPO  󰘬 $WORKTREE   $BRANCH$CTX\"\n  else\n    echo \" $REPO   $BRANCH$CTX\"\n  fi\n'"
-  },
+  "autoCompactWindow": 800000,
   "enabledPlugins": {
     "azure@claude-plugins-official": false,
     "claude-md-management@claude-plugins-official": false,
@@ -104,15 +12,61 @@
     "skill-creator@claude-plugins-official": true,
     "superpowers@claude-plugins-official": true
   },
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "dummy",
+    "ANTHROPIC_BASE_URL": "http://localhost:4001",
+    "ANTHROPIC_SMALL_FAST_MODEL": "claude-haiku-4.5"
+  },
   "extraKnownMarketplaces": {
     "openai-codex": {
       "source": {
-        "source": "github",
-        "repo": "openai/codex-plugin-cc"
+        "repo": "openai/codex-plugin-cc",
+        "source": "github"
       }
     }
   },
-  "autoCompactWindow": 800000,
+  "hooks": {
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "bash $HOME/.claude/hooks/big-tool-result-warn.sh",
+            "timeout": 10,
+            "type": "command"
+          }
+        ],
+        "matcher": "*"
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "bash $HOME/.claude/hooks/herdr-agent-state.sh session",
+            "timeout": 10,
+            "type": "command"
+          }
+        ],
+        "matcher": "*"
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "command": "bash $HOME/.claude/hooks/strip-kql-base64.sh",
+            "timeout": 5,
+            "type": "command"
+          }
+        ]
+      }
+    ]
+  },
+  "model": "claude-opus-4.7-1m-internal",
   "skipDangerousModePermissionPrompt": true,
+  "statusLine": {
+    "command": "bash -c '\n  INPUT=$(cat)\n  CWD=$(printf \"%s\" \"$INPUT\" | python3 -c \"import sys,json; d=json.load(sys.stdin); print(d.get(\\\"workspace\\\",{}).get(\\\"current_dir\\\") or d.get(\\\"cwd\\\",\\\"\\\"))\" 2>/dev/null)\n  [ -z \"$CWD\" ] && CWD=$(pwd)\n  ABS=$(realpath \"$CWD\" 2>/dev/null || echo \"$CWD$CTX\")\n  REPO_ROOT=$(realpath \"$HOME/repo\" 2>/dev/null || echo \"$HOME/repo$CTX\")\n\n  BRANCH=$(git -C \"$CWD\" rev-parse --abbrev-ref HEAD 2>/dev/null)\n\n  CTX=$(printf \"%s\" \"$INPUT\" | bash \"$HOME/.claude/statusline-context.sh\" 2>/dev/null)\n\n  # Strip ~/repo/ prefix\n  case \"$ABS\" in\n    \"$REPO_ROOT\"/*)\n      REL=\"${ABS#$REPO_ROOT/}\"\n      ;;\n    *)\n      if [ -n \"$BRANCH\" ]; then\n        echo \" $(basename $CTX\"$ABS\")   $BRANCH\"\n      else\n        echo \" $(basename $CTX\"$ABS\")\"\n      fi\n      exit 0\n      ;;\n  esac\n\n  # REL examples:\n  #   aks-devinfra\n  #   aks-devinfra/.worktrees/feat-x\n  #   aks-devinfra/.worktrees/feat-x/aks-rp\n  PRIMARY=\"${REL%%/*}\"\n  REST=\"${REL#$PRIMARY}\"\n  REST=\"${REST#/}\"\n\n  WORKTREE=\"\"\n  SUBREPO=\"\"\n  case \"$REST\" in\n    .worktrees/*)\n      AFTER=\"${REST#.worktrees/}\"\n      WORKTREE=\"${AFTER%%/*}\"\n      SUBREPO=\"${AFTER#$WORKTREE}\"\n      SUBREPO=\"${SUBREPO#/}\"\n      ;;\n  esac\n\n  REPO=\"$PRIMARY\"\n  if [ -n \"$SUBREPO\" ]; then\n    # Show only first segment of subrepo path\n    REPO=\"$PRIMARY/${SUBREPO%%/*}\"\n  fi\n\n  [ -z \"$BRANCH\" ] && BRANCH=\"-\"\n\n  if [ -n \"$WORKTREE\" ]; then\n    echo \" $REPO  󰘬 $WORKTREE   $BRANCH$CTX\"\n  else\n    echo \" $REPO   $BRANCH$CTX\"\n  fi\n'",
+    "type": "command"
+  },
   "theme": "light"
 }
