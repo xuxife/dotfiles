@@ -18,13 +18,13 @@
 	autoSetupRemote = true
 [credential]
 	helper = git-credential-manager
-	credentialStore = cache
+	credentialStore = secretservice
 	azreposCredentialType = oauth
 	msauthFlow = system
 	guiPrompt = false
+	cacheOptions = --timeout 43200
 [credential "azrepos:org/msazure"]
 	username = xingfeixu@microsoft.com
-	azureAuthority = https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47
 [http]
 	postBuffer = 524288000
 	lowSpeedLimit = 0
