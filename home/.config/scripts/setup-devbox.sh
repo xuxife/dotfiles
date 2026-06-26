@@ -98,19 +98,50 @@ phase_sshkeys() {
 # =============================================================================
 phase_prereqs() {
   if command -v apt-get >/dev/null 2>&1; then
-    local pkgs=(build-essential procps curl file git)
-    log "apt: installing Homebrew prerequisites: ${pkgs[*]}"
+    # mosh: use the system (apt) build, not Homebrew's — brew's bundled glibc
+    # has a near-empty locale store and breaks mosh-server's UTF-8 check.
+    local pkgs=(build-essential procps curl file git mosh)
+    log "apt: installing prerequisites: ${pkgs[*]}"
     sudo apt-get update -y
     sudo DEBIAN_FRONTEND=noninteractive apt-get install -y "${pkgs[@]}"
     ok "apt prerequisites installed"
   elif command -v tdnf >/dev/null 2>&1; then
     # Azure Linux: no 'build-essential' meta — install the toolchain explicitly.
-    local pkgs=(gcc gcc-c++ make glibc-devel binutils procps-ng curl file git tar gzip which)
-    log "tdnf: installing Homebrew prerequisites: ${pkgs[*]}"
+    local pkgs=(gcc gcc-c++ make glibc-devel binutils procps-ng curl file git tar gzip which mosh)
+    log "tdnf: installing prerequisites: ${pkgs[*]}"
     sudo tdnf install -y "${pkgs[@]}"
     ok "tdnf prerequisites installed"
   else
-    warn "no apt/tdnf found — install Homebrew prerequisites manually"
+    warn "no apt/tdnf found — install prerequisites manually"
+  fi
+}
+
+# =============================================================================
+# Phase: locale — ensure a lowercase 'c.utf8' UTF-8 locale exists (system glibc)
+#
+# glibc locale names are case-sensitive in the language part: Ubuntu ships
+# 'C.UTF-8' but NOT lowercase 'c.utf8'. Some client terminals forward
+# LANG=c.UTF-8 / c.utf8 (lowercase c); glibc can't match it and falls back to
+# US-ASCII, which makes mosh-server refuse to start:
+#   "mosh-server needs a UTF-8 native locale to run ... LANG=c.utf8 ... US-ASCII"
+# Compiling a lowercase 'c.utf8' makes the client-supplied LANG resolve to
+# UTF-8. We use the SYSTEM localedef because mosh is the apt build (system
+# glibc); brew's mosh is intentionally not installed.
+# =============================================================================
+phase_locale() {
+  command -v localedef >/dev/null 2>&1 || { ok "locale: localedef not present — skipping"; return 0; }
+  if LC_ALL=c.utf8 locale charmap 2>/dev/null | grep -qx 'UTF-8'; then
+    ok "locale: 'c.utf8' already resolves to UTF-8"
+    return 0
+  fi
+  log "locale: compiling lowercase 'c.utf8' (UTF-8) locale"
+  # POSIX source lacks LC_TELEPHONE/MEASUREMENT/IDENTIFICATION — the resulting
+  # warnings are harmless; the LC_CTYPE charset (UTF-8) is what mosh needs.
+  sudo localedef -i POSIX -f UTF-8 c.utf8 || warn "localedef reported warnings (continuing)"
+  if LC_ALL=c.utf8 locale charmap 2>/dev/null | grep -qx 'UTF-8'; then
+    ok "locale: 'c.utf8' now resolves to UTF-8"
+  else
+    warn "locale: 'c.utf8' still not resolving — check localedef output"
   fi
 }
 
@@ -152,7 +183,6 @@ phase_brew() {
 brew "fish"
 brew "powershell"
 brew "tmux"
-brew "mosh"
 brew "starship"
 brew "autojump"
 brew "fzf"
@@ -171,6 +201,7 @@ brew "stow"
 
 # Git & dev
 brew "gh"
+cask "git-credential-manager" # Git Credential Manager is a cask, not a formula
 brew "git-extras"
 brew "git-filter-repo"
 brew "lazygit"
@@ -319,6 +350,7 @@ main() {
   phase_tailscale
   phase_sshkeys
   phase_prereqs
+  phase_locale
   phase_brew
   phase_dotfiles
   phase_tools
