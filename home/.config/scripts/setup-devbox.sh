@@ -117,6 +117,40 @@ phase_prereqs() {
 }
 
 # =============================================================================
+# Phase: podman — rootless container engine (system package, not Homebrew)
+#
+# Podman is the recommended way to run containers on Linux: daemonless and
+# rootless by default. It's installed from the distro (apt/tdnf) rather than
+# Homebrew because it needs deep system integration — subuid/subgid maps,
+# cgroups v2, and helpers like crun/slirp4netns/fuse-overlayfs — that brew's
+# self-contained prefix can't provide. (Same reasoning as mosh above.)
+# =============================================================================
+phase_podman() {
+  if command -v podman >/dev/null 2>&1; then
+    ok "podman: already installed ($(podman --version))"
+  elif command -v apt-get >/dev/null 2>&1; then
+    log "apt: installing podman"
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install -y podman
+    ok "podman installed ($(podman --version))"
+  elif command -v tdnf >/dev/null 2>&1; then
+    log "tdnf: installing podman"
+    sudo tdnf install -y podman
+    ok "podman installed ($(podman --version))"
+  else
+    warn "podman: no apt/tdnf found — install manually"
+    return 0
+  fi
+
+  # Rootless needs subuid/subgid ranges for the current user. Ubuntu's package
+  # usually seeds these, but add them if missing (idempotent).
+  if ! grep -q "^$USER:" /etc/subuid 2>/dev/null; then
+    log "podman: adding subuid/subgid range for $USER"
+    sudo usermod --add-subuids 200000-265535 --add-subgids 200000-265535 "$USER" \
+      || warn "podman: could not add subuid/subgid range (rootless may need manual setup)"
+  fi
+}
+
+# =============================================================================
 # Phase: locale — ensure a lowercase 'c.utf8' UTF-8 locale exists (system glibc)
 #
 # glibc locale names are case-sensitive in the language part: Ubuntu ships
@@ -350,6 +384,7 @@ main() {
   phase_tailscale
   phase_sshkeys
   phase_prereqs
+  phase_podman
   phase_locale
   phase_brew
   phase_dotfiles
