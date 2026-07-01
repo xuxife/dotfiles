@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/home/xingfeixu/.local/bin/code tunnel --accept-server-license-terms --name devbox
+ExecStart=/home/xingfeixu/.local/bin/code-insiders tunnel --accept-server-license-terms --name devbox
 Restart=always
 RestartSec=10
 
